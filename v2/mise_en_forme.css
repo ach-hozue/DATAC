@@ -1,0 +1,405 @@
+/*import de 2 polices d'écritures : Exo et Roboto*/
+@import url('https://fonts.googleapis.com/css?family=Exo|Roboto');
+
+body {
+    color: black;
+    border: black;
+    text-align: left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font: 14px Times New Roman;
+
+    /*supprime la bar blanche*/
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+img {
+    width: 70%;
+}
+
+#imgFractContrast{
+    display: none;
+}
+
+/* bannière bleu */
+#r2, #r3 {
+    color: #E7F6FA;
+    background-color: #00ABDC;
+}
+
+/* titre - bannière bleu*/
+#r2 {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Exo', 'sans-serif';
+}
+
+/*Bienvenue + texte bienvenue */
+#r3 {
+    font: 20px Exo serif;
+}
+
+@media (max-width: 767px){
+    #r2{
+        font-size: 25px;
+    }
+    #r3{
+        font-size: 18px;
+    }
+
+    img{
+        width: 60%;
+    }
+
+    .imgDisp{
+
+        width: 45%;
+    }
+}
+
+/*********penche bannière bleu**********/
+
+.penche{
+    background-color: #00ABDC;
+
+    position: relative;
+}
+
+.penche::after{
+    border-bottom: 100px solid white;
+    border-left: 1950px solid transparent;
+}
+/***************************************/
+
+/*********penche bannière grise haut**********/
+
+.pencheSect{
+    background: url(images/backgroundGrey.png) center center;
+    background-size: 36px;
+
+    position: relative;
+}
+
+.pencheSect::after{
+    border-top: 100px solid white;
+    border-right: 1950px solid transparent;
+}
+
+/********************************************/
+
+/*********penche bannière grise bas**********/
+
+#rSect {
+
+    background: url(images/backgroundGrey.png) center center;
+    background-color: transparent;
+    background-size: 36px;
+
+    position: relative;
+}
+
+#rSect::after{
+    border-bottom: 100px solid white;
+    border-left: 1950px solid transparent;
+
+}
+
+/*******************************************/
+
+/*ligne fils d'Arianne*/
+#rArianne {
+    color: #E7F6FA;
+    background-color: #00ABDC;
+}
+
+/*couleur ecriture fils d'Arianne*/
+.fAriane {
+    color: #E7F6FA;
+}
+
+/*font ecriture fils d'Arianne*/
+.ariane {
+    font-style: italic;
+    font-size: 22px;
+}
+
+header {
+    margin: auto;
+    width: 60%;
+}
+
+h3 {
+    text-align: center;
+}
+
+/*couleurs des boutons*/
+.btn-primary {
+    background-color: #00ABDC;
+}
+
+/*titre dispositif*/
+.titre_dispositif {
+    text-align: center;
+    font: 16px Geneva;
+    color: #333333;
+}
+
+/*********Modal avec fancybox**********/
+/* (a étudier un peu pour
+enlever/ajouter des trucs) */
+
+.modal-container {
+    max-width: 500px;
+    padding: 0;
+    margin: 0;
+    border-radius: .3em;
+}
+
+.modal-title {
+    font-weight: 700;
+    padding: 1.5em;
+}
+
+.modal-body {
+    max-height: 50vh;
+    padding: 0 1.5em 1.5em 1.5em;
+    overflow-y: auto;
+    font: 100% Roboto serif;
+}
+
+/* Custom entrance animation */
+
+.fancybox-slide--complete .modal-container {
+    -webkit-animation: slide-down .216s;
+    animation: slide-down .216s;
+}
+
+
+
+@-webkit-keyframes slide-down{
+    0% {
+        margin-top: -3em;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slide-down{
+    0% {
+        margin-top: -3em;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+/********************************************/
+
+/*changement de couleur lorsqu'on passe la souris sur le (i)*/
+.glyphicon-info-sign:hover{
+    color: #00c6ff;
+}
+
+
+/*titres dans la bannière grise*/
+.sousTitre {
+    text-align: center;
+    color: #E7F6FA;
+    font-size: 22px;
+}
+
+/*placement du bouton connexion*/
+p.bouton_connexion {
+    margin-top: 10%;
+}
+
+/*placement de la recherche*/
+p.bouton_recherche {
+    margin-top: 15%;
+}
+
+/*couleur du accueil dans le fils d'Arianne*/
+a.ariane {
+    color: #333333;
+}
+
+/*paragraphe description du dispositif*/
+.descriptionProduit{
+    text-align: justify;
+    margin-top: 10%;
+    color: #333333;
+}
+
+/*arrondis les bord des images de dispositifs*/
+.imgDisp{
+    border-radius: 10px;
+}
+
+/*********résultats d'une recherche*********/
+
+.resultatRecherche{
+    text-align: center;
+    color: #00c6ff;
+}
+
+.resultatRecherche:hover{
+    color: #bcfafa;
+}
+
+/*******************************************/
+
+/*texte de la page : Qui sommes nous ? */
+#equipe{
+    color: #bcfafa;
+}
+
+/*texte de la page : Plan du site */
+.txtOrga{
+    color: #bcfafa;
+}
+
+/*couleur du pictogramme (i)*/
+.glyphicon-info-sign{
+    color: white;
+}
+
+/*changement sur les boutons pour parcourir le site (deficiences, catégories et dispositifs)*/
+.btnparcours{
+    color: #bcfafa;
+    font-size: 17px;
+}
+
+/*************css pour la "boîtes" d'un modal*************/
+
+.alertPerso {
+
+    display: none;
+    position: fixed;
+    opacity: 1;
+    z-index: 11000;
+    top: 200px;
+
+    width: 55%;
+    padding: 1%;
+
+    background: #FFF;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
+
+}
+
+/*changements couleur text du modal*/
+.alertPerso p {
+    color: #666;
+}
+
+
+#lean_lay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+/*********************************************************/
+
+/*******logo retour (seulement à partir de 350px)*******/
+
+@media (max-width: 350px) {
+    .logoRetour{
+        display: none;
+    }
+}
+/*fixe le logo dans le coin bas-gauche*/
+.pagePreced{
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 110px;
+}
+/*taille du logo + petit décalage par rapport au bord de l'écran*/
+.logoRetour {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 767px){
+    .pagePreced{
+        width: 90px;
+    }
+}
+
+@media (max-width: 540px){
+    .pagePreced{
+        width: 80px;
+    }
+}
+/************************/
+
+/*les liens ne sont plus soulignés quand on passe la souris dessus*/
+a:link {
+    text-decoration: none;
+}
+
+/*taille et placement des organigrammes*/
+.organigramme{
+    width:70%;
+    border-radius: 4px;
+    padding-top: 10px;
+}
+
+/*petite différence de taille pour le premier organigramme*/
+.organigrammeSpeUn{
+    width:50%;
+    border-radius: 4px;
+    padding-top: 10px;
+}
+
+/********changement taille d'écran < 767px**************/
+
+/*cache la partie utilisé quand on a un petit écran*/
+.taillePetite{
+    visibility: hidden;
+    position: absolute;
+}
+
+/*quand l'écran est < 767px*/
+@media (max-width: 767px) {
+    /*cache la partie grand écran*/
+    .tailleCommun{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    /*montre la partie petit écran*/
+    .taillePetite{
+        visibility: visible;
+        position: relative;
+    }
+
+    /*changement couleur du champs de recherche*/
+    .recherchePetit{
+        background-color: rgba(0, 172, 220, 0.1);
+        border-color: #00c6ff;
+
+    }
+
+    .btnGrand{
+        visibility: hidden;
+    }
+
+    #rSect{
+        text-align: center;
+    }
+
+
+}

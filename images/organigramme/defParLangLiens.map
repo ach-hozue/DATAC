@@ -1,0 +1,27 @@
+<img src="[5] (importée)" width="1538" height="551" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:Maxime -->
+<area shape="rect" coords="17,239,571,364" href="deficience.php?idDef=5" />
+<area shape="rect" coords="605,79,989,129" href="categorie.php?idCat=161&amp;niv=1" />
+<area shape="rect" coords="604,287,749,336" href="categorie.php?idCat=166&amp;niv=1" />
+<area shape="rect" coords="605,474,793,525" href="categorie.php?idCat=174&amp;niv=1" />
+<area shape="rect" coords="1005,16,1264,48" href="categorie.php?idCat=162&amp;niv=2" />
+<area shape="rect" coords="1016,56,1517,84" href="categorie.php?idCat=163&amp;niv=2" />
+<area shape="rect" coords="1017,92,1493,121" href="categorie.php?idCat=164&amp;niv=2" />
+<area shape="rect" coords="1018,129,1467,157" href="categorie.php?idCat=165&amp;niv=2" />
+<area shape="rect" coords="775,172,1287,200" href="categorie.php?idCat=167&amp;niv=2" />
+<area shape="rect" coords="776,208,1257,237" href="categorie.php?idCat=168&amp;niv=2" />
+<area shape="rect" coords="778,243,1274,273" href="categorie.php?idCat=170&amp;niv=2" />
+<area shape="rect" coords="778,280,1100,308" href="categorie.php?idCat=171&amp;niv=2" />
+<area shape="rect" coords="778,315,989,344" href="categorie.php?idCat=171&amp;niv=2" />
+<area shape="rect" coords="780,352,1049,381" href="categorie.php?idCat=172&amp;niv=2" />
+<area shape="rect" coords="780,386,1035,418" href="categorie.php?idCat=173&amp;niv=2" />
+<area shape="rect" coords="816,435,1333,462" href="categorie.php?idCat=175&amp;niv=2" />
+<area shape="rect" coords="817,468,1360,498" href="categorie.php?idCat=176&amp;niv=2" />
+<area shape="rect" coords="817,505,1155,535" href="categorie.php?idCat=177&amp;niv=2" />
+</map>

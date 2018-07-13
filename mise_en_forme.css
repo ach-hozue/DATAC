@@ -1,0 +1,884 @@
+/*import de 2 polices d'écritures : Exo et Roboto*/
+@import url('https://fonts.googleapis.com/css?family=Exo|Roboto');
+
+body {
+    color: black;
+    border: black;
+    text-align: left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font: 14px 'Roboto';
+
+    /*supprime la bar blanche*/
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.tailleCommun{
+  position: fixed;
+  background: white;
+  z-index: 9999;
+  margin-left:-15px;
+  margin-right: -30px;
+  width:100%;
+}
+
+.liste{
+	visibility: hidden;
+}
+
+.tableau{
+	visibility: hidden;
+}
+
+
+img {
+    width: 70%;
+}
+
+#imgFractContrast{
+    display: none;
+}
+
+#imgDatacContrast{
+    display: none;
+}
+
+#imgDatac{
+    width:200px;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* bannière bleu */
+#r2, #r3 {
+    color: #E7F6FA;
+    background-color: #00ABDC;
+}
+
+/* titre - bannière bleu*/
+#r2 {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Exo', 'sans-serif';
+    padding-top: 150px;
+}
+
+/*Bienvenue + texte bienvenue */
+#r3 {
+    font: 20px Exo serif;
+}
+
+@media (max-width: 767px){
+    #r2{
+        font-size: 25px;
+    }
+    #r3{
+        font-size: 18px;
+    }
+
+    img{
+        width: 60%;
+    }
+
+    .imgDisp{
+
+        width: 45%;
+    }
+}
+
+/*********penche bannière bleu**********/
+
+.penche{
+    background-color: #00ABDC;
+
+    position: relative;
+}
+
+.penche::after{
+    border-bottom: 100px solid white;
+    border-left: 1950px solid transparent;
+}
+/***************************************/
+
+/*********penche bannière grise haut**********/
+
+.pencheSect{
+    background: url(images/backgroundGrey.png) center center;
+    background-size: 36px;
+
+    position: relative;
+}
+
+.pencheSect::after{
+    border-top: 100px solid white;
+    border-right: 1950px solid transparent;
+}
+
+/********************************************/
+
+/*********penche bannière grise bas**********/
+
+#rSect {
+
+    background: url(images/backgroundGrey.png) center center;
+    background-color: transparent;
+    background-size: 36px;
+
+    position: relative;
+}
+
+#rSect::after{
+    border-bottom: 100px solid white;
+    border-left: 1950px solid transparent;
+
+}
+
+/*******************************************/
+
+/*ligne fils d'Arianne*/
+#rArianne {
+    color: #E7F6FA;
+    background-color: #00ABDC;
+}
+
+/*couleur ecriture fils d'Arianne*/
+.fAriane {
+    color: #E7F6FA;
+}
+
+/*font ecriture fils d'Arianne*/
+.ariane {
+    font-style: italic;
+    font-size: 22px;
+}
+
+header {
+    margin: auto;
+    width: 60%;
+}
+
+h3 {
+    text-align: center;
+}
+
+.p{
+    color: #00ABDC;
+    font-family: 'Exo', 'sans-serif';
+    font-size: 20px; 
+    font-weight: 300; 
+    text-align: center;
+
+}
+
+/*couleurs des boutons*/
+.btn-primary {
+    background-color: #00ABDC;
+
+}
+
+/*titre dispositif*/
+.titre_dispositif {
+    text-align: center;
+    font: 16px Geneva;
+    color: #333333;
+}
+
+/*********Modal avec fancybox**********/
+
+.modal-container {
+    max-width: 500px;
+    padding: 0;
+    margin: 0;
+    border-radius: .3em;
+}
+
+.modal-title {
+    font-weight: 700;
+    padding: 1.5em;
+}
+
+.modal-body {
+    max-height: 50vh;
+    padding: 0 1.5em 1.5em 1.5em;
+    overflow-y: auto;
+    font: 100% Roboto serif;
+}
+
+/* Custom entrance animation */
+
+.fancybox-slide--complete .modal-container {
+    -webkit-animation: slide-down .216s;
+    animation: slide-down .216s;
+}
+
+
+
+@-webkit-keyframes slide-down{
+    0% {
+        margin-top: -3em;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slide-down{
+    0% {
+        margin-top: -3em;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+/********************************************/
+
+/*changement de couleur lorsqu'on passe la souris sur le (i)*/
+.glyphicon-info-sign:hover{
+    color: #00c6ff;
+}
+
+
+/*titres dans la bannière grise*/
+.sousTitre {
+    text-align: center;
+    color: #E7F6FA;
+    font-size: 22px;
+}
+
+/*placement du bouton connexion*/
+p.bouton_connexion {
+    margin-top: 15%;
+}
+
+/*placement de la recherche*/
+p.bouton_recherche {
+    margin-top: 15%;
+}
+
+/*couleur du accueil dans le fils d'Arianne*/
+a.ariane {
+    color: #333333;
+}
+
+/*paragraphe description du dispositif*/
+.descriptionProduit{
+    text-align: justify;
+    margin-top: 10%;
+    color: #333333;
+}
+
+/*arrondis les bord des images de dispositifs*/
+.imgDisp{
+    border-radius: 10px;
+}
+
+/*********résultats d'une recherche*********/
+
+.resultatRecherche{
+    text-align: center;
+    color: #00c6ff;
+}
+
+.resultatRecherche:hover{
+    color: #bcfafa;
+}
+
+/*******************************************/
+
+/*texte de la page : Qui sommes nous ? */
+#equipe{
+    color: #bcfafa;
+}
+
+/*texte de la page : Plan du site */
+.txtOrga{
+    color: #bcfafa;
+}
+
+/*couleur du pictogramme (i)*/
+.glyphicon-info-sign{
+    color: #ffffff;
+    font-size: 30px;
+    position: relative;
+}
+
+/*changement sur les boutons pour parcourir le site (deficiences, catégories et dispositifs)*/
+.btnparcours{
+    font-size: 17px;
+}
+
+/*************css pour la "boîtes" d'un modal*************/
+
+.alertPerso {
+
+    display: none;
+    position: fixed;
+    opacity: 1;
+    z-index: 11000;
+    top: 200px;
+
+    width: 55%;
+    padding: 1%;
+
+    background: #FFF;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
+
+}
+
+/*changements couleur text du modal*/
+.alertPerso p {
+    color: #666;
+}
+
+
+#lean_lay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+/*********************************************************/
+
+/*******logo retour (seulement à partir de 350px)*******/
+
+@media (max-width: 350px) {
+    .logoRetour{
+        display: none;
+    }
+}
+/*fixe le logo dans le coin bas-gauche*/
+.pagePreced{
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 110px;
+}
+
+/*taille du logo + petit décalage par rapport au bord de l'écran*/
+.logoRetour {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+@media (max-width: 767px){
+    .pagePreced{
+        width: 90px;
+	}
+	
+
+}
+
+@media (max-width: 540px){
+    .pagePreced{
+        width: 80px;
+	}
+	
+	
+}
+/************************/
+
+/*les liens ne sont plus soulignés quand on passe la souris dessus*/
+a:link {
+    text-decoration: none;
+}
+
+/*taille et placement des organigrammes*/
+.organigramme{
+    width:70%;
+    border-radius: 4px;
+    padding-top: 10px;
+}
+
+/*petite différence de taille pour le premier organigramme*/
+.organigrammeSpeUn{
+    width:50%;
+    border-radius: 4px;
+    padding-top: 10px;
+}
+
+/********changement taille d'écran < 767px**************/
+
+/*cache la partie utilisé quand on a un petit écran*/
+.taillePetite{
+    visibility: hidden;
+    position: absolute;
+}
+
+/*quand l'écran est < 767px*/
+@media (max-width: 767px) {
+    /*cache la partie grand écran*/
+    .tailleCommun{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    /*montre la partie petit écran*/
+    .taillePetite{
+        visibility: visible;
+        position: relative;
+    }
+
+    /*changement couleur du champs de recherche*/
+    .recherchePetit{
+        background-color: rgba(0, 172, 220, 0.1);
+        border-color: #00c6ff;
+
+    }
+
+    .btnGrand{
+        visibility: hidden;
+    }
+
+    #rSect{
+        text-align: center;
+	}
+
+}
+
+
+/*bouton changement fixé dans le coin bast-droit*/
+.changeContraste{
+    position:fixed;
+    top: 45px;
+    left: 75.5%;
+    z-index: 99999;
+}
+
+/* rond*/
+.titremilieu{
+    font-family: 'Exo', 'sans-serif';
+    font-size: 26px;
+    font-weight: 600;
+    background: #C1EBF7;
+    border-radius: 200px;
+    width: 200px;
+    height: 200px;
+    color: #333;
+    padding: 20px;
+    padding-top: 48px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.iconechiffre{
+    border-radius: 50px;
+    width: 80px;
+    border: 3px solid #000;
+    font-size: 40px;
+    text-align: center;
+    float: left;
+    font-family: 'Exo', sans-serif;
+    height: 80px;
+    line-height: 80px;
+    position: absolute; /* postulat de départ */
+    top: 50%; left: 50%; /* à 50%/50% du parent référent */
+    transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+}
+
+.iconeSituation{
+    border-radius: 50px;
+    width: 300px;
+    border: 3px solid #000;
+    font-size: 20px;
+    text-align: center;
+    float: left;
+    font-family: 'Exo', sans-serif;
+    height: 100px;
+    line-height: 100px;
+    position: relative; /* postulat de départ */
+    top: 50%; left: 50%; /* à 50%/50% du parent référent */
+    transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+}
+
+.texte{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.texteSituation{
+    text-align: left;
+    margin-top: 30px;
+    color: white;
+    font-size: 17px;
+    margin-left: 3px
+}
+
+.centre_vertical {
+    display: flex;
+    flex-direction: row;
+  }
+  
+.centre_vertical > [class^="col-"],
+.centre_vertical > [class*=" col-"] {
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+    left: 12%;
+ 
+    
+  }
+
+.image{
+
+    width:70px;
+    height:70px;
+}
+
+
+
+.chart{
+    margin: 0 auto;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+}
+
+.alinea_droite{
+   text-align: right;
+    right: 0;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+	.news p{
+		text-align: center;
+	}
+	.news div{
+		text-align:center;
+	}
+	.news img{
+		display:inline;
+	}
+	.pic1Ab{
+		margin-bottom:0 !important;
+	}
+	.pic2Ab{
+		margin-bottom:0 !important;
+	}
+	#menu {
+		display:none;
+	}
+	#menuF{
+		opacity:0 !important;
+		/*display:none !important;*/
+	}
+	.fixed{
+		opacity:0;
+		display:none;
+	}
+	
+	.slicknav_menu {
+		display:block;
+	}
+	.about p{
+		text-align: left;
+	}
+    .chevron{
+        display:none;
+    }  
+
+    .horL{
+        display: none;
+    }
+}
+@media screen and (max-width: 1229px){
+	.pic1Ab{
+		margin-bottom:50px ;
+	}
+	.pic2Ab{
+		margin-bottom:20px ;
+	}
+    
+.bouton.send{
+    margin-right: 0px;
+    }
+    
+    .contactErreur, .contactSucces{
+    margin-right: 0px !important;
+    }
+    
+    .home5 a img{
+        width:60px;
+        float:left;
+        margin-right:20px;
+    }
+
+    .home5 a img.mica{
+        width:30px;
+    }
+
+    .home5 a img.ims{
+        width:70px;
+        margin-top: 10px;
+    }
+
+    .home5 a img.montaigne{
+        width:80px;
+        margin-top: 20px;
+    }
+	
+}
+@media screen and (max-width: 460px) {
+	.pic2Ab{
+		padding-bottom:0 !important;
+		margin-bottom:0;
+	}
+	.pic1Ab{
+		padding-bottom:0 !important;
+		margin-bottom:0;
+	}
+	.camera_caption h2{
+		font-size: 65px;
+	}
+	.about h3{
+		text-align:center;
+		margin-top:73px !important;
+	}
+	.about p{
+		margin-top: 30px !important;
+		text-align: left;
+	}
+	.Ama {
+	margin-top: 280px !important;
+	margin-bottom: 100px !important;
+}
+	.soc ul li{
+		margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 323px)
+{
+	.footer .fEmail{
+		border-radius: 4px !important;
+		margin-bottom:10px ;
+	}	
+	.footer .subS{
+		border-radius: 4px !important;
+	}
+	.news p{
+		text-align: left;
+	}
+	
+}
+@media screen and (max-width: 1229px) {
+	.cont {
+		/*text-align:center;*/
+		margin-left: 0px !important;
+	}
+	.name {
+	width: 100% !important;
+}
+	.Email {
+	width: 100% !important;
+}	
+	.ftext .cBtn ul{
+		padding-left:40px !important;
+	}
+	.news p{
+		text-align:left;
+	}
+	
+}
+
+.sl{
+	height: 67px;
+	position: absolute;
+	width: 100%;
+	top: 418px;
+	background: url(../images/sliderL.png) no-repeat;
+}
+
+span.listebleu{
+    font-size: 15px;
+    line-height: 22px;
+    color: #00ABDC;
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 700;
+    margin-top: 12px;
+    margin-bottom: 0;
+    margin-left:8px;
+    margin-right:5px;
+}
+
+.bar{
+	margin-top: 32px;
+}
+
+.aboutUs h3{
+	font-size:28px;
+	color: #2f2f2f;
+	font-family: 'Exo', 'sans-serif';
+	font-weight: 400;
+}
+.about h3{
+margin-top: 51px;
+    font-size: 17px;
+    color: #00ABDC;
+    font-family: 'Exo', 'sans-serif';
+    font-weight: 400;
+}
+.about p{
+	font-size: 13px;
+	line-height: 22px;
+	color: #666666;
+	font-family: 'Roboto', 'sans-serif';
+	font-weight: 300;
+	margin-top: 12px;
+	margin-bottom: 0;
+    text-align: left;
+}
+
+.pic1Ab{
+	padding-bottom: 15px;
+	float: right;
+	padding: 34px;
+	padding-top: 51px;
+	padding-right: 40px;
+	padding-bottom: 10px;
+    width:150px;
+    border-radius: 2px;
+}
+.about1{
+	float: right;
+	text-align: right;
+}
+.pic2Ab{
+	float: left;
+	padding: 40px;
+	padding-top: 51px;
+	padding-right: 37px;
+	padding-bottom: 39px;
+    width:152px;
+    border-radius: 2px;
+}
+
+.pic3Ab  {
+    
+    display: block;
+	padding: 40px;
+	padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width:150px;
+    border-radius: 15px;
+}
+
+.horL{
+overflow: auto;
+    margin: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 1170px;
+    height: 500px;
+    content: '';
+    z-index: 1;
+	background: url(images/horL.png) no-repeat;
+}
+
+.horL2{
+    overflow: auto;
+        margin: auto;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 1170px;
+        height: 500px;
+        content: '';
+        z-index: 1;
+        background: url(images/horL_petit.png) no-repeat;
+    }
+
+div.spoiler {
+    padding: 10px;
+    cursor: pointer;
+    width : 60%;
+}
+
+div.spoiler div.contenuSpoiler {
+    display: none;
+    margin : 0;
+}
+
+.sousCat {	
+	font-size : 18px;
+	text-align :center;
+	color : white;
+	padding-left : 10px;
+	padding-top : 5px; 
+	padding-bottom : 5px;
+	background-color : #333333;
+	width :100%;
+	display: block;
+    margin-left : auto;
+    margin-right: auto;
+	border : 1px solid rgb(255, 255, 255) ;
+	border-radius : 5px;
+}
+
+.sousCat:hover{	
+	background-color : rgb(0, 0, 0);
+	color : white;
+	border : 1px solid #ffffff;
+}
+
+.sousCat2{
+    font-size : 18px;
+	text-align :center;
+	color : black;
+	padding-left : 10px;
+	padding-top : 5px; 
+	padding-bottom : 5px;
+	background-color : #C1EBF7;
+	width :80%;
+    display: block;
+    margin-top: 5%;
+    margin-bottom : 5%;
+    margin-left : auto;
+    margin-right: auto;
+    border : 1px solid #333333;
+	border-radius : 10px;
+}
+
+.sousCat2:hover {
+    background-color : #00ABCD;
+	color : white;
+	border : 1px solid #333333;
+}
+
+.conteneurSousCat{
+    border: 1px solid #ffffff;
+    display:block;
+    margin-left: 15%;
+    width: 70%;
+    border-radius : 5px;
+    padding: 0px;
+}
+
+

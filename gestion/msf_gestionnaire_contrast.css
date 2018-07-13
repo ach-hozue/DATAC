@@ -1,0 +1,106 @@
+/*import de 2 polices d'écritures : Exo et Roboto*/
+@import url('https://fonts.googleapis.com/css?family=Exo|Roboto');
+
+
+body {
+    background-color: black;
+    /*pour faire baisser la zone blanche*/
+    margin-top: 8%;
+}
+
+img {
+    width: 100%;
+}
+
+#imgDatac{
+    display: none;
+}
+
+/*Si la largeur de l'écran est supérieur à 710px on affiche le formulaire de connexion*/
+/*@media (min-width: 767px) {*/
+
+/*évite que les éléments prennent toutes la place de la zone blanche*/
+.row{
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+/*couleurs texte "login" et "mot de passe"*/
+.control-label{
+    color: white;
+}
+
+/*css pour le texte d'erreur de connexion*/
+.erreur {
+    border-radius: 10px;
+    background-color: #fff6f6;
+    border: #e0b4b4 1px solid;
+    color: rgba(159, 58, 56, 0.82);
+}
+
+/*zone ou tous les éléments sont placés*/
+#zoneLogin {
+    background-color: black;
+}
+
+/*bouton se connecter*/
+#btn_envoi {
+    background-color: #00ABDC;
+    color: white;
+}
+
+/*placement de l'icone du bouton se connecter*/
+.glyphicon-log-in{
+    margin-left: 7px;
+}
+
+/*texte : "mot de passe oublié ?" */
+#mdpOublie {
+    font: 100% Roboto;
+    color: #00ABDC;
+}
+
+/*fixe le logo dans le coin bas-gauche*/
+.pagePreced{
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 90px;
+}
+/*taille du logo + petit décalage par rapport au bord de l'écran*/
+.logoRetour {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 767px){
+    .pagePreced{
+        width: 90px;
+    }
+}
+
+@media (max-width: 540px){
+    .pagePreced{
+        width: 80px;
+    }
+}
+/**************************************************************/
+
+
+/*si la largeur de l'écran est inférieur à 411px on enlève l'icone de connection*/
+@media (max-width: 411px) {
+
+    .iconeConnect{
+        display: none;
+    }
+
+}
+
+/*bouton changement fixé dans le coin bast-droit*/
+.changeContraste{
+    position:fixed;
+    bottom: 5px;
+    left: 89%;
+}

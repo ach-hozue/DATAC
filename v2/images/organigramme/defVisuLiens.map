@@ -1,0 +1,51 @@
+<img src="[1] (importée)" width="1373" height="1351" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:Maxime -->
+<area shape="rect" coords="17,652,504,731" href="deficience.php?idDef=1" />
+<area shape="rect" coords="537,131,996,185" href="categorie.php?idCat=1&amp;niv=1" />
+<area shape="rect" coords="536,303,828,354" href="categorie.php?idCat=8&amp;niv=1" />
+<area shape="rect" coords="537,410,774,461" href="categorie.php?idCat=11&amp;niv=1" />
+<area shape="rect" coords="537,562,681,614" href="categorie.php?idCat=15&amp;niv=1" />
+<area shape="rect" coords="537,715,836,766" href="categorie.php?idCat=21&amp;niv=1" />
+<area shape="rect" coords="536,921,725,973" href="categorie.php?idCat=25&amp;niv=1" />
+<area shape="rect" coords="536,1202,944,1253" href="categorie.php?idCat=34&amp;niv=1" />
+<area shape="rect" coords="1026,55,1337,87" href="categorie.php?idCat=2&amp;niv=2" />
+<area shape="rect" coords="1026,92,1229,116" href="categorie.php?idCat=3&amp;niv=2" />
+<area shape="rect" coords="1027,127,1195,154" href="categorie.php?idCat=4&amp;niv=2" />
+<area shape="rect" coords="1027,162,1312,191" href="categorie.php?idCat=5&amp;niv=2" />
+<area shape="rect" coords="1025,197,1171,226" href="categorie.php?idCat=6&amp;niv=2" />
+<area shape="rect" coords="1029,236,1249,260" href="categorie.php?idCat=7&amp;niv=2" />
+<area shape="rect" coords="855,280,1167,304" href="categorie.php?idCat=9&amp;niv=2" />
+<area shape="rect" coords="854,314,1018,343" href="categorie.php?idCat=10&amp;niv=2" />
+<area shape="rect" coords="798,367,1000,395" href="categorie.php?idCat=12&amp;niv=2" />
+<area shape="rect" coords="799,404,948,431" href="categorie.php?idCat=13&amp;niv=2" />
+<area shape="rect" coords="798,441,986,468" href="categorie.php?idCat=14&amp;niv=2" />
+<area shape="rect" coords="712,485,1047,510" href="categorie.php?idCat=16&amp;niv=2" />
+<area shape="rect" coords="711,521,1013,548" href="categorie.php?idCat=17&amp;niv=2" />
+<area shape="rect" coords="713,558,986,586" href="categorie.php?idCat=18&amp;niv=2" />
+<area shape="rect" coords="710,594,1044,619" href="categorie.php?idCat=19&amp;niv=2" />
+<area shape="rect" coords="710,630,1166,657" href="categorie.php?idCat=20&amp;niv=2" />
+<area shape="rect" coords="864,674,1124,703" href="categorie.php?idCat=22&amp;niv=2" />
+<area shape="rect" coords="865,710,1126,738" href="categorie.php?idCat=23&amp;niv=2" />
+<area shape="rect" coords="865,745,1088,776" href="categorie.php?idCat=24&amp;niv=2" />
+<area shape="rect" coords="753,787,1073,822" href="categorie.php?idCat=26&amp;niv=2" />
+<area shape="rect" coords="753,827,952,857" href="categorie.php?idCat=27&amp;niv=2" />
+<area shape="rect" coords="753,863,1264,891" href="categorie.php?idCat=28&amp;niv=2" />
+<area shape="rect" coords="755,901,1092,927" href="categorie.php?idCat=29&amp;niv=2" />
+<area shape="rect" coords="756,936,1247,963" href="categorie.php?idCat=30&amp;niv=2" />
+<area shape="rect" coords="756,974,1276,1002" href="categorie.php?idCat=31&amp;niv=2" />
+<area shape="rect" coords="755,1009,982,1036" href="categorie.php?idCat=32&amp;niv=2" />
+<area shape="rect" coords="756,1046,1087,1070" href="categorie.php?idCat=33&amp;niv=2" />
+<area shape="rect" coords="965,1087,1202,1118" href="categorie.php?idCat=35&amp;niv=2" />
+<area shape="rect" coords="970,1124,1148,1154" href="categorie.php?idCat=36&amp;niv=2" />
+<area shape="rect" coords="969,1162,1139,1188" href="categorie.php?idCat=37&amp;niv=2" />
+<area shape="rect" coords="973,1197,1168,1224" href="categorie.php?idCat=38&amp;niv=2" />
+<area shape="rect" coords="973,1232,1353,1262" href="categorie.php?idCat=39&amp;niv=2" />
+<area shape="rect" coords="972,1268,1129,1295" href="categorie.php?idCat=40&amp;niv=2" />
+<area shape="rect" coords="974,1305,1236,1331" href="categorie.php?idCat=41&amp;niv=2" />
+</map>
