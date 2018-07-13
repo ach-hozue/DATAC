@@ -7,7 +7,7 @@ body {
     text-align: left;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font: 14px 'Roboto';
+    font: 18px 'Roboto';
 
     /*supprime la bar blanche*/
     overflow: hidden;
@@ -31,36 +31,37 @@ body {
 	visibility: hidden;
 }
 
-
 img {
     width: 70%;
 }
 
-#imgFractContrast{
-    display: none;
-}
+/* Barre de navigation */
 
-#imgDatacContrast{
+.navbar {
+    background-color: white;
+    height: 120px;
+}
+#imgFractContrast, #imgDatacContrast{
     display: none;
 }
 
 #imgDatac{
-    width:200px;
-    margin-top: 10px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
+.nav .navbar-nav .navbar-right {
+    display: flex; /* contexte sur le parent */
+  flex-direction: column; /* direction d'affichage verticale */
+  justify-content: center; /* alignement vertical */
+}
 
-
-/* bannière bleu */
+/* Bannière bleue */
 #r2, #r3 {
     color: #E7F6FA;
     background-color: #00ABDC;
 }
 
-/* titre - bannière bleu*/
+/* titre - bannière bleue */
 #r2 {
     text-align: center;
     font-size: 35px;
@@ -70,12 +71,13 @@ img {
 
 /*Bienvenue + texte bienvenue */
 #r3 {
-    font: 20px Exo serif;
+    font: 20px 'Exo' serif;
 }
 
 @media (max-width: 767px){
     #r2{
         font-size: 25px;
+        padding-top: 10px;
     }
     #r3{
         font-size: 18px;
@@ -91,7 +93,7 @@ img {
     }
 }
 
-/*********penche bannière bleu**********/
+/********* penche bannière bleue **********/
 
 .penche{
     background-color: #00ABDC;
@@ -140,18 +142,18 @@ img {
 
 /*******************************************/
 
-/*ligne fils d'Arianne*/
+/*ligne fil d'Arianne*/
 #rArianne {
     color: #E7F6FA;
     background-color: #00ABDC;
 }
 
-/*couleur ecriture fils d'Arianne*/
+/*couleur ecriture fil d'Arianne*/
 .fAriane {
     color: #E7F6FA;
 }
 
-/*font ecriture fils d'Arianne*/
+/*font ecriture fil d'Arianne*/
 .ariane {
     font-style: italic;
     font-size: 22px;
@@ -172,13 +174,24 @@ h3 {
     font-size: 20px; 
     font-weight: 300; 
     text-align: center;
-
 }
 
-/*couleurs des boutons*/
-.btn-primary {
-    background-color: #00ABDC;
+/* Boutons*/
 
+.btn-primary, .navbar-default .navbar-nav > li > a {
+    background-color: #00ABDC;
+    padding-top: 6px;
+    padding-right: 12px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    color:white;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-color: #00ABDC;
+}
+.navbar-default .navbar-nav > li > a:hover{
+    background-color: #2e6da4;
+    color:white;
 }
 
 /*titre dispositif*/
@@ -260,11 +273,6 @@ p.bouton_connexion {
     margin-top: 15%;
 }
 
-/*placement de la recherche*/
-p.bouton_recherche {
-    margin-top: 15%;
-}
-
 /*couleur du accueil dans le fils d'Arianne*/
 a.ariane {
     color: #333333;
@@ -308,7 +316,7 @@ a.ariane {
 /*couleur du pictogramme (i)*/
 .glyphicon-info-sign{
     color: #ffffff;
-    font-size: 30px;
+    font-size: 26px;
     position: relative;
 }
 
@@ -452,15 +460,6 @@ a:link {
 
 }
 
-
-/*bouton changement fixé dans le coin bast-droit*/
-.changeContraste{
-    position:fixed;
-    top: 45px;
-    left: 75.5%;
-    z-index: 99999;
-}
-
 /* rond*/
 .titremilieu{
     font-family: 'Exo', 'sans-serif';
@@ -492,6 +491,12 @@ a:link {
     transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 
+.iconechiffre:hover{
+    cursor: pointer;
+    background-color: #00ABCD;
+    color: white;
+}
+
 .iconeSituation{
     border-radius: 50px;
     width: 300px;
@@ -505,6 +510,12 @@ a:link {
     position: relative; /* postulat de départ */
     top: 50%; left: 50%; /* à 50%/50% du parent référent */
     transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+}
+
+.iconeSituation:hover{
+    cursor: pointer;
+    background-color: #C1EBF7;
+    font-weight: bold;
 }
 
 .texte{
@@ -596,7 +607,7 @@ a:link {
 		display:block;
 	}
 	.about p{
-		text-align: left;
+        text-align: left;
 	}
     .chevron{
         display:none;
@@ -713,8 +724,8 @@ a:link {
 	background: url(../images/sliderL.png) no-repeat;
 }
 
-span.listebleu{
-    font-size: 15px;
+span.listeBleue{
+    font-size: 18px;
     line-height: 22px;
     color: #00ABDC;
     font-family: 'Roboto', 'sans-serif';
@@ -737,13 +748,13 @@ span.listebleu{
 }
 .about h3{
 margin-top: 51px;
-    font-size: 17px;
+    font-size: 20px;
     color: #00ABDC;
     font-family: 'Exo', 'sans-serif';
     font-weight: 400;
 }
 .about p{
-	font-size: 13px;
+	font-size: 18px;
 	line-height: 22px;
 	color: #666666;
 	font-family: 'Roboto', 'sans-serif';

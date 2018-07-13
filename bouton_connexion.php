@@ -1,4 +1,4 @@
-<p class="bouton_connexion">
+<div class="bouton_connexion">
 
     <script>
         if(screen.width<767){
@@ -34,4 +34,4 @@
         <?php
     }
     ?>
-</p>
+</div>

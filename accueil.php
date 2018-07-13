@@ -37,7 +37,7 @@
 
     <!--bannière grise avec boutons deficiences + modals d'informations-->
     <section class="row" id="rSect">
-        <div class="titremilieu"> Deux axes de recherche</div>
+        <div class="titremilieu"> Deux axes <br> de <br> recherche</div>
     </section>
         <article>
         <div class="row" >
@@ -72,7 +72,6 @@
         $TabDef = mysqli_query($BDD, $RqtDef); 
         $LgnDef = mysqli_fetch_array ($TabDef)
         
-        
         ?>
         <!--definition d'un modal -->
         <div style="display:none">
@@ -101,8 +100,7 @@
                             <img class="ImageRecherche pic1Ab"  src="images/Visuel.png" />
                                 <h3>Déficiences visuelles</h3></a>
                                 <p>
-                                    La vision est un des sens primordiaux dans la communication. En effet, elle permet de se
-                                    repérer dans son environnement et d’interagir avec...<a href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listebleu">[Lire la suite]</span></a>
+                                    La vision est un des sens primordiaux dans la communication.<a href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
@@ -112,8 +110,7 @@
                             <img class="ImageRecherche pic2Ab" src="images/Auditif.png" />
                                 <h3>Déficiences auditives</h3></a>
                                 <p>
-                                    Les déficiences auditives peuvent être un frein à la communication. Généralement, les échanges
-                                    se font oralement ce qui empêche donc les déficients auditifs de suivre...<a href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listebleu">[Lire la suite]</span></a>
+                                    Les déficiences auditives peuvent être un frein à la communication. <a href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
@@ -129,8 +126,7 @@
                             <img class="ImageRecherche pic1Ab" src="images/Moteur.png" />
                                 <h3>Déficiences motrices</h3></a>
                                 <p>
-                                    Pour communiquer, il est souvent nécessaire d’utiliser ses membres supérieurs. En effet, lire,
-                                    écrire, utiliser un ordinateur, sont autant de tâches qui permettent de communiquer...<a href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listebleu">[Lire la suite]</span></a>
+                                    Pour communiquer, il est souvent nécessaire d’utiliser ses membres supérieurs. <a href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
 
                                 </p>
 
@@ -142,8 +138,7 @@
                             <img class="ImageRecherche pic2Ab" src="images/Mental.png" />
                                 <h3>Déficiences mentales et psychiques</h3></a>
                                 <p>
-                                    Le handicap mental (retard mental, dans le langage courant) est un trouble généralisé perçu
-                                    avant l’âge adulte, caractérisé par un déficit et un dysfonctionnement cognitifs... <a href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listebleu">[Lire la suite]</span></a>
+                                    Le handicap mental (retard mental, dans le langage courant) est un trouble généralisé... <a href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
@@ -159,8 +154,7 @@
                             <img class="ImageRecherche pic1Ab" src="images/Parole.png" />
                                 <h3>Déficiences de la parole et du langage</h3></a>
                                 <p>        
-                                    L’usage de la parole et du langage dans la communication est primordial. La parole permet, en
-                                    effet, de pouvoir exprimer ses ressentis...<a href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listebleu">[Lire la suite]</span></a>
+                                    L’usage de la parole et du langage dans la communication est primordial. <a href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
@@ -177,7 +171,7 @@
                             <img class="ImageRecherche pic1Ab"  src="images\Manger.png" />
                                 <h3>Repas</h3></a>
                                 <p>
-                                Le repas est un élèment essentiel de la vie de tous les jours<span class="listebleu">[Lire la suite]</span></a>
+                                Le repas est un élèment essentiel de la vie de tous les jours<span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
@@ -187,7 +181,7 @@
                             <img class="ImageRecherche pic2Ab" src="images\École travail.png" />
                                 <h3>École/Travail</h3></a>
                                 <p>
-                                    L'école et le travail sont des lieux importants où la situ ation de handicap est importante.<span class="listebleu">[Lire la suite]</span></a>
+                                    L'école et le travail sont des lieux importants où la situ ation de handicap est importante.<span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
@@ -203,7 +197,7 @@
                             <img class="ImageRecherche pic1Ab" src="images/Loisirs.png" />
                                 <h3>Loisirs</h3></a>
                                 <p>
-                                Les jeux sont des moments précieux pour pouvoir décompresser...<span class="listebleu">[Lire la suite]</span></a>
+                                Les jeux sont des moments précieux pour pouvoir décompresser...<span class="listeBleue">[Lire la suite]</span></a>
 
                                 </p>
 
@@ -215,7 +209,7 @@
                             <img class="ImageRecherche pic2Ab" src="images/Soins.png" />
                                 <h3>Soins/Traitemnt</h3></a>
                                 <p>
-                                    L'accès au soin peut être rendu difficile de part une mauvaise gestion du handicap<span class="listebleu">[Lire la suite]</span></a>
+                                    L'accès au soin peut être rendu difficile de part une mauvaise gestion du handicap<span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
@@ -239,20 +233,7 @@
         </div>
     </footer>
 </div>
-<!--Changement de feuille de style-->
-<a class="btn btn-primary changeContraste" href="#" onclick="changeContrast()">Contraste élevé</a>
-<script>
-    function changeContrast() {
-        console.log($('#css').attr('href'));
-        if($('#css').attr('href') == 'mise_en_forme.css') {
-            $('#css').replaceWith('<link id=css rel=stylesheet href=mise_en_forme_contrast.css>');
-            $('.changeContraste').text('Contraste standard');
-        }else{
-            $('#css').replaceWith('<link id=css rel=stylesheet href=mise_en_forme.css>');
-            $('.changeContraste').text('Contraste élevé');
-        }
-    }
-</script>
+
 </body>
 <script type="text/javascript">		
             function afficherMasquerNiveau(id) {
@@ -265,27 +246,24 @@
                 document.getElementById("niveau2").style.display="none";
                 document.getElementById("niveau2B").style.backgroundColor="#E7F6FA";
                 document.getElementById("niveau2B").style.color="#00ABDC";
-                
-                
             }
             else if (id=="niveau2")	{
 
                 document.getElementById("niveau1").style.display="none";
                 document.getElementById("niveau1B").style.backgroundColor="#E7F6FA";
                 document.getElementById("niveau1B").style.color="#00ABDC";
-                
             }
             }
             $("<?php echo '.modal'.$LgnDef["id_deficience"].''; ?>").fancybox({
-                                maxWidth    : 800,
-                                maxHeight    : 600,
-                                fitToView    : false,
-                                width        : '70%',
-                                height        : '70%',
-                                autoSize    : false,
-                                closeClick    : false,
-                                openEffect    : 'none',
-                                closeEffect    : 'none'
-                            });
+                maxWidth    : 800,
+                maxHeight    : 600,
+                fitToView    : false,
+                width        : '70%',
+                height        : '70%',
+                autoSize    : false,
+                closeClick    : false,
+                openEffect    : 'none',
+                closeEffect    : 'none'
+            });
 </script>
 </html>
