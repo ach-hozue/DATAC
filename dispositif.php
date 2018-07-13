@@ -5,7 +5,33 @@ require("connect.php");
 mysqli_set_charset($BDD, "utf8");
 
 // Récupération de l'identifiant du dispositif sur lequel on vient de cliquer
+<<<<<<< HEAD
+$idDis = htmlentities($_GET["idDis"]);
+$BoolSituation=htmlentities($_GET["bool"]);
+
+if ($BoolSituation==true)
+{
+    $idSousSit =  htmlentities($_GET["idSsSit"]);
+    $idSit =  htmlentities($_GET["idSit"]);
+
+    // Récupération des informations liées à la situation
+    $RqtSit = "SELECT * FROM situation WHERE id_sit_cat = $idSit AND niveau=1";
+    $TabSit = mysqli_query($BDD, $RqtSit);
+    $LgnSit = mysqli_fetch_array($TabSit);
+    $nomSit = $LgnSit["nom_sit"];
+
+    // Récupération des informations liées à la sous situation
+    $RqtSousSit="SELECT * FROM situation WHERE id_situation=$idSousSit";
+    $TabSousSit = mysqli_query($BDD, $RqtSousSit);
+    $LgnSousSit = mysqli_fetch_array($TabSousSit);
+    $nomSousSit=$LgnSousSit['nom_sit'];
+
+}
+
+
+=======
 $idDis = $_GET["idDis"];
+>>>>>>> b53d3d67c64b4d5a9744dde331490ffac0cba918
 
 // Récupération des informations liées au dispositif
 $RqtDis = "SELECT * FROM dispositif WHERE id_dispositif = $idDis";
@@ -135,6 +161,37 @@ for ($i = 1; $i < $niv; $i++) {
         <!--Fil d’Ariane-->
         <p class="ariane col-sm-offset-1">
             <a class="ariane" href="accueil.php">Accueil</a>
+<<<<<<< HEAD
+            //
+            <?php
+            if(isset($_GET["idSit"]))
+            { 
+                ?>
+                <a class="fAriane" href="situation.php?idSit=<?php echo $idSit; ?>"><?php echo $nomSit ?> // <?php echo $nomSousSit; ?></a>
+                <?php
+                 for ($i = 1; $i <= $niv; $i++) {
+                    ?>
+                    // <?php echo $tabCat[$i]; ?>
+                    <?php
+                }
+            }
+            else
+            {
+                ?>
+                <a class="fAriane" href="deficience.php?idDef=<?php echo $tabCatId[0]; ?>"><?php echo $tabCat[0]; ?></a>
+                <?php
+                // Pour les sous-catégories
+                for ($i = 1; $i <= $niv; $i++) {
+                    ?>
+                    // <a class="fAriane"
+                        href="categorie.php?idCat=<?php echo $tabCatId[$i]; ?>&niv=<?php echo $i; ?>"><?php echo $tabCat[$i]; ?></a>
+                    <?php
+                }
+                // nom du dispositif
+            }
+                ?>
+            // <?php echo $nomDis; ?>
+=======
             // <a class="fAriane" href="deficience.php?idDef=<?php echo $tabCatId[0]; ?>"><?php echo $tabCat[0]; ?></a>
             <?php
             // Pour les sous-catégories
@@ -147,6 +204,7 @@ for ($i = 1; $i < $niv; $i++) {
             // nom du dispositif
             ?>
             > <?php echo $nomDis; ?>
+>>>>>>> b53d3d67c64b4d5a9744dde331490ffac0cba918
         </p>
     </div>
 

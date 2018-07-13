@@ -148,7 +148,11 @@
 																						$déficience=$LgnDeficience['id_def_cat'];
 																					}
 																				?>
+<<<<<<< HEAD
+																					<a  href="categorieSituation.php?idNiv=<?php echo $LgnDeficience["niveau"];?>&idCat=<?php echo $LgnDeficience["id_categorie"];?>&idSsSit=<?php echo $idSituationCategorie ?>&idSit=<?php echo $idSit ?>&niv=<?php echo $LgnDeficience['niveau'] ?>" class="sousCat2"><?php echo $LgnDeficience['nom_cat'] ?> </a> <!--on affiche le bouton--> 
+=======
 																					<a  href="categorieSituation.php?idNiv=<?php echo $LgnDeficience["niveau"];?>&idCat=<?php echo $LgnDeficience["id_categorie"];?>&idSsSit=<?php echo $idSituationCategorie ?>&idSit=<?php echo $idSit ?>" class="sousCat2"><?php echo $LgnDeficience['nom_cat'] ?> </a> <!--on affiche le bouton--> 
+>>>>>>> b53d3d67c64b4d5a9744dde331490ffac0cba918
 																					<?php
 																				}
 																			}
@@ -228,7 +232,11 @@
 																	$déficience=$LgnDeficience2['id_def_cat'];
 																}
 																?>
+<<<<<<< HEAD
+																<a href="categorieSituation.php?idNiv=<?php echo $LgnDeficience2["niveau"];?>&idCat=<?php echo $LgnDeficience2["id_categorie"];?>&idSsSit=<?php echo $idSituation ?>&idSit=<?php echo $idSit ?>&niv=<?php echo $LgnDeficience['niveau'] ?>" class="sousCat2"><?php echo $LgnDeficience2['nom_cat'] ?></a>
+=======
 																<a href="categorieSituation.php?idNiv=<?php echo $LgnDeficience2["niveau"];?>&idCat=<?php echo $LgnDeficience2["id_categorie"];?>&idSsSit=<?php echo $idSituation ?>&idSit=<?php echo $idSit ?>" class="sousCat2"><?php echo $LgnDeficience2['nom_cat'] ?></a>
+>>>>>>> b53d3d67c64b4d5a9744dde331490ffac0cba918
 																<?php
 															}
 														}
