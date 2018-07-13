@@ -1,0 +1,52 @@
+<img src="[3] (importée)" width="2072" height="1217" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:Maxime -->
+<area shape="rect" coords="16,613,500,692" href="deficience.php?idDef=3" />
+<area shape="rect" coords="534,149,983,201" href="categorie.php?idCat=83&amp;niv=1" />
+<area shape="rect" coords="532,338,1079,391" href="categorie.php?idCat=91&amp;niv=1" />
+<area shape="rect" coords="533,510,833,560" href="categorie.php?idCat=99&amp;niv=1" />
+<area shape="rect" coords="533,789,1350,841" href="categorie.php?idCat=103&amp;niv=1" />
+<area shape="rect" coords="533,1103,942,1157" href="categorie.php?idCat=119&amp;niv=1" />
+<area shape="rect" coords="961,1029,1190,1058" href="categorie.php?idCat=120&amp;niv=2" />
+<area shape="rect" coords="963,1065,1219,1091" href="categorie.php?idCat=121&amp;niv=2" />
+<area shape="rect" coords="967,1098,1227,1127" href="categorie.php?idCat=122&amp;niv=2" />
+<area shape="rect" coords="967,1134,1324,1162" href="categorie.php?idCat=123&amp;niv=2" />
+<area shape="rect" coords="969,1171,1138,1197" href="categorie.php?idCat=124&amp;niv=2" />
+<area shape="rect" coords="1372,587,1513,615" href="categorie.php?idCat=104&amp;niv=2" />
+<area shape="rect" coords="1372,656,1557,687" href="categorie.php?idCat=105&amp;niv=2" />
+<area shape="rect" coords="1372,781,1560,813" href="categorie.php?idCat=109&amp;niv=2" />
+<area shape="rect" coords="1375,907,1651,938" href="categorie.php?idCat=114&amp;niv=2" />
+<area shape="rect" coords="1377,978,1746,1010" href="categorie.php?idCat=118&amp;niv=2" />
+<area shape="rect" coords="1577,622,1757,651" href="categorie.php?idCat=106&amp;niv=3" />
+<area shape="rect" coords="1580,659,1704,687" href="categorie.php?idCat=107&amp;niv=3" />
+<area shape="rect" coords="1582,694,1696,722" href="categorie.php?idCat=108&amp;niv=3" />
+<area shape="rect" coords="1588,730,1765,756" href="categorie.php?idCat=110&amp;niv=3" />
+<area shape="rect" coords="1591,766,1738,793" href="categorie.php?idCat=111&amp;niv=3" />
+<area shape="rect" coords="1592,800,1832,829" href="categorie.php?idCat=112&amp;niv=3" />
+<area shape="rect" coords="1593,839,1901,863" href="categorie.php?idCat=113&amp;niv=3" />
+<area shape="rect" coords="1674,874,1940,901" href="categorie.php?idCat=115&amp;niv=3" />
+<area shape="rect" coords="1679,912,1893,937" href="categorie.php?idCat=116&amp;niv=3" />
+<area shape="rect" coords="1681,946,2052,972" href="categorie.php?idCat=117&amp;niv=3" />
+<area shape="rect" coords="851,468,1092,497" href="categorie.php?idCat=100&amp;niv=2" />
+<area shape="rect" coords="853,504,1114,535" href="categorie.php?idCat=101&amp;niv=2" />
+<area shape="rect" coords="856,543,1124,569" href="categorie.php?idCat=102&amp;niv=2" />
+<area shape="rect" coords="1100,244,1208,271" href="categorie.php?idCat=92&amp;niv=2" />
+<area shape="rect" coords="1238,243,1471,272" href="categorie.php?idCat=93&amp;niv=3" />
+<area shape="rect" coords="1105,281,1276,308" href="categorie.php?idCat=94&amp;niv=2" />
+<area shape="rect" coords="1106,318,1614,343" href="categorie.php?idCat=95&amp;niv=2" />
+<area shape="rect" coords="1110,356,1502,381" href="categorie.php?idCat=96&amp;niv=2" />
+<area shape="rect" coords="1108,388,1265,416" href="categorie.php?idCat=97&amp;niv=2" />
+<area shape="rect" coords="1110,425,1450,451" href="categorie.php?idCat=98&amp;niv=2" />
+<area shape="rect" coords="1007,197,1243,227" href="categorie.php?idCat=90&amp;niv=2" />
+<area shape="rect" coords="1009,88,1378,117" href="categorie.php?idCat=84&amp;niv=2" />
+<area shape="rect" coords="1408,17,1940,48" href="categorie.php?idCat=85&amp;niv=3" />
+<area shape="rect" coords="1410,56,1773,84" href="categorie.php?idCat=86&amp;niv=3" />
+<area shape="rect" coords="1412,93,1864,118" href="categorie.php?idCat=87&amp;niv=3" />
+<area shape="rect" coords="1414,126,1785,155" href="categorie.php?idCat=88&amp;niv=3" />
+<area shape="rect" coords="1416,163,1879,192" href="categorie.php?idCat=89&amp;niv=3" />
+</map>

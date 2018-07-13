@@ -1,0 +1,51 @@
+<img src="[2] (importée)" width="2045" height="1136" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:Maxime -->
+<area shape="rect" coords="15,525,510,607" href="deficience.php?idDef=2" />
+<area shape="rect" coords="542,204,917,255" href="categorie.php?idCat=42&amp;niv=1" />
+<area shape="rect" coords="541,446,949,498" href="categorie.php?idCat=57&amp;niv=1" />
+<area shape="rect" coords="541,616,842,668" href="categorie.php?idCat=64&amp;niv=1" />
+<area shape="rect" coords="541,877,961,930" href="categorie.php?idCat=68&amp;niv=1" />
+<area shape="rect" coords="930,49,1158,83" href="categorie.php?idCat=43&amp;niv=2" />
+<area shape="rect" coords="937,197,1174,227" href="categorie.php?idCat=47&amp;niv=2" />
+<area shape="rect" coords="941,344,1106,372" href="categorie.php?idCat=56&amp;niv=2" />
+<area shape="rect" coords="972,389,1146,417" href="categorie.php?idCat=58&amp;niv=2" />
+<area shape="rect" coords="977,426,1169,452" href="categorie.php?idCat=59&amp;niv=2" />
+<area shape="rect" coords="977,496,1148,522" href="categorie.php?idCat=60&amp;niv=2" />
+<area shape="rect" coords="869,575,1099,604" href="categorie.php?idCat=65&amp;niv=2" />
+<area shape="rect" coords="870,612,1125,640" href="categorie.php?idCat=66&amp;niv=2" />
+<area shape="rect" coords="870,647,1134,677" href="categorie.php?idCat=67&amp;niv=2" />
+<area shape="rect" coords="987,767,1325,795" href="categorie.php?idCat=69&amp;niv=2" />
+<area shape="rect" coords="988,982,1405,1010" href="categorie.php?idCat=75&amp;niv=2" />
+<area shape="rect" coords="1185,21,1571,46" href="categorie.php?idCat=44&amp;niv=3" />
+<area shape="rect" coords="1187,56,1559,84" href="categorie.php?idCat=45&amp;niv=3" />
+<area shape="rect" coords="1188,91,1721,118" href="categorie.php?idCat=46&amp;niv=3" />
+<area shape="rect" coords="1198,142,1436,172" href="categorie.php?idCat=48&amp;niv=3" />
+<area shape="rect" coords="1201,252,1499,281" href="categorie.php?idCat=51&amp;niv=3" />
+<area shape="rect" coords="1175,459,1567,489" href="categorie.php?idCat=61&amp;niv=3" />
+<area shape="rect" coords="1180,498,1615,523" href="categorie.php?idCat=62&amp;niv=3" />
+<area shape="rect" coords="1179,531,1487,558" href="categorie.php?idCat=63&amp;niv=3" />
+<area shape="rect" coords="1355,693,1621,721" href="categorie.php?idCat=70&amp;niv=3" />
+<area shape="rect" coords="1358,728,1642,757" href="categorie.php?idCat=71&amp;niv=3" />
+<area shape="rect" coords="1359,765,1652,795" href="categorie.php?idCat=72&amp;niv=3" />
+<area shape="rect" coords="1362,802,1662,828" href="categorie.php?idCat=73&amp;niv=3" />
+<area shape="rect" coords="1360,836,1869,866" href="categorie.php?idCat=74&amp;niv=3" />
+<area shape="rect" coords="1432,873,1727,900" href="categorie.php?idCat=76&amp;niv=3" />
+<area shape="rect" coords="1434,909,1749,936" href="categorie.php?idCat=77&amp;niv=3" />
+<area shape="rect" coords="1435,946,1773,973" href="categorie.php?idCat=78&amp;niv=3" />
+<area shape="rect" coords="1434,983,1780,1009" href="categorie.php?idCat=79&amp;niv=3" />
+<area shape="rect" coords="1436,1018,1736,1045" href="categorie.php?idCat=80&amp;niv=3" />
+<area shape="rect" coords="1439,1054,1760,1083" href="categorie.php?idCat=81&amp;niv=3" />
+<area shape="rect" coords="1437,1089,2019,1117" href="categorie.php?idCat=82&amp;niv=3" />
+<area shape="rect" coords="1464,127,1874,154" href="categorie.php?idCat=49&amp;niv=4" />
+<area shape="rect" coords="1465,162,2025,190" href="categorie.php?idCat=50&amp;niv=4" />
+<area shape="rect" coords="1530,197,1843,225" href="categorie.php?idCat=52&amp;niv=4" />
+<area shape="rect" coords="1532,237,1942,263" href="categorie.php?idCat=53&amp;niv=4" />
+<area shape="rect" coords="1534,269,1738,299" href="categorie.php?idCat=54&amp;niv=4" />
+<area shape="rect" coords="1534,306,1885,337" href="categorie.php?idCat=55&amp;niv=4" />
+</map>

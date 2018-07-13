@@ -1,0 +1,263 @@
+/*import de 2 polices d'écritures : Exo et Roboto*/
+@import url('https://fonts.googleapis.com/css?family=Exo|Roboto');
+
+/*police d'écrituregénéral*/
+body
+{
+    font-family:'Roboto', 'sans-serif';
+    font-size:  15px ;
+
+    /*supprime la bar blanche*/
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+
+
+/*enlève un vide du menu*/
+nav
+{
+    float: left;
+}
+
+
+/*évite que les liens sois soulignés quand on passe la souris dessus*/
+a:link {
+    text-decoration: none;
+}
+
+/*********************************************/
+
+/*taille des logos (fractures et DATAC)*/
+img {
+    width: 80%;
+}
+
+.petiteTaille{
+    visibility: hidden;
+    position: absolute;
+}
+
+@media (max-width: 767px) {
+
+    .tailleNormal{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .petiteTaille{
+        visibility: visible;
+        position: relative;
+    }
+
+
+
+    .rightHeadPetit{
+        padding-top: 5%;
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a{
+        color: inherit;
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus{
+        color: #00ABDC;
+    }
+
+}
+
+/****En haut à droite (connecté en tant que..., deconnexion, retour au site) : ******/
+.rightHead {
+    /* placement des éléments*/
+    margin-top: 12%;
+    margin-left: 10%;
+    /* couleur écriture */
+    color: #00ABDC;
+}
+
+/* couleur écriture */
+.rightHead > a{
+    color: #00ABDC;
+}
+
+/*couleur quand on passe sur  déconnexion ou retour au site*/
+.rightHead > a:hover{
+    color: #00c6ff;
+}
+
+/************************************************************************************/
+
+/*couleur bannière de fond*/
+.rMenu {
+    background-color: #00ABDC;
+}
+
+/*couleur de fond du menu et enlève les bordures*/
+.navbar-inverse {
+    background-image: linear-gradient(#E7F6FA 100%, #222 0%);
+    background-image: -webkit-linear-gradient(#E7F6FA 100%, #222 0%);
+    background-color: transparent;
+    border-color: transparent;
+}
+
+/****bannière penché bleu*****/
+.penche{
+    /*couleur de fond*/
+    background-color: #00ABDC;
+    /*arrête la bannière à la taille de l'écran*/
+
+    position: relative;
+}
+
+/*penche le bas de la bannière*/
+.penche::after{
+    border-bottom: 100px solid white;
+    border-left: 1950px solid transparent;
+}
+
+/*****************************/
+
+/************bannière grise*********/
+
+/**haut**/
+.pencheSect{
+    /*fond*/
+    background: url(../images/backgroundGrey.png) center center;
+    background-size: 40px;
+    /*arrête la bannière à la taille de l'écran*/
+
+    position: relative;
+}
+/*penche le haut de la bannière*/
+.pencheSect::after{
+    border-top: 100px solid white;
+    border-right: 1950px solid transparent;
+}
+
+/* milieu + bas du home*/
+.rTxt {
+    /*couleur bannière de fond*/
+    background: url(../images/backgroundGrey.png) center center;
+    background-size: 40px;
+    /*écriture*/
+    color: #E7F6FA;
+    text-align: center;
+    /*arrête la bannière à la taille de l'écran*/
+
+    position: relative;
+}
+
+/*penche le bas de la bannière*/
+.rTxt::after{
+    border-bottom: 100px solid white;
+    border-left: 1950px solid transparent;
+}
+
+/* milieu + bas de tout sauf le home*/
+.rForm {
+    /*couleur bannière de fond*/
+    background: url(../images/backgroundGrey.png) center center;
+    background-size: 36px;
+    /*éciture*/
+    color: #E7F6FA;
+    padding-top: 20px;
+    /*arrête la bannière à la taille de l'écran*/
+
+    position: relative;
+}
+
+/*penche le bas de la bannière*/
+.rForm::after{
+    border-bottom: 100px solid white;
+    border-left: 1950px solid transparent;
+}
+
+/************************************/
+
+/****************menu*******************/
+
+/*couleur des éléments du menu*/
+.navbar-inverse .navbar-nav > li > a{
+    color: #00ABDC;
+}
+
+/*couleur quand on passe sur un élément du menu*/
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #00c6ff;
+}
+
+/*écriture (police, taille, majuscule,...)*/
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a{
+    text-shadow: none;
+    font-family:'Roboto', 'sans-serif';
+    font-size:  14px ;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/****************************************/
+
+.tab2{
+    background-color: rgba(0,171,237,0.7);
+
+}
+
+/*placement footer */
+footer {
+    text-align: center;
+    padding-top: 2%;
+}
+
+/************page non connecté*****************/
+
+/*placement bouton lien vers se connecter*/
+.nonConnect{
+    margin-top: 15px;
+}
+
+/*placement logo*/
+#logoNonConnect{
+    margin-top: 8%;
+}
+
+/*fixe le logo dans le coin bas-gauche*/
+.pagePreced{
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 90px;
+}
+/*taille du logo + petit décalage par rapport au bord de l'écran*/
+.logoRetour {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 767px){
+    .pagePreced{
+        width: 90px;
+    }
+}
+
+@media (max-width: 540px){
+    .pagePreced{
+        width: 80px;
+    }
+}
+/**************************************************************/
+
+/*si largeur écran > 656px on cache le bouton : connexion*/
+@media (min-width: 656px) {
+    #petit{
+        visibility: hidden;
+    }
+}
+
+/*si largeur écran < 655px on cache le bouton : cliquer ici pour vous connecter*/
+@media (max-width: 655px) {
+    #grand{
+        visibility: hidden;
+    }
+}
+
+/************************************************/
