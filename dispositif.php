@@ -5,6 +5,7 @@ require("connect.php");
 mysqli_set_charset($BDD, "utf8");
 
 // Récupération de l'identifiant du dispositif sur lequel on vient de cliquer
+<<<<<<< HEAD
 $idDis = htmlentities($_GET["idDis"]);
 $BoolSituation=htmlentities($_GET["bool"]);
 
@@ -28,6 +29,9 @@ if ($BoolSituation==true)
 }
 
 
+=======
+$idDis = $_GET["idDis"];
+>>>>>>> b53d3d67c64b4d5a9744dde331490ffac0cba918
 
 // Récupération des informations liées au dispositif
 $RqtDis = "SELECT * FROM dispositif WHERE id_dispositif = $idDis";
@@ -157,6 +161,7 @@ for ($i = 1; $i < $niv; $i++) {
         <!--Fil d’Ariane-->
         <p class="ariane col-sm-offset-1">
             <a class="ariane" href="accueil.php">Accueil</a>
+<<<<<<< HEAD
             //
             <?php
             if(isset($_GET["idSit"]))
@@ -186,6 +191,20 @@ for ($i = 1; $i < $niv; $i++) {
             }
                 ?>
             // <?php echo $nomDis; ?>
+=======
+            // <a class="fAriane" href="deficience.php?idDef=<?php echo $tabCatId[0]; ?>"><?php echo $tabCat[0]; ?></a>
+            <?php
+            // Pour les sous-catégories
+            for ($i = 1; $i <= $niv; $i++) {
+                ?>
+                > <a class="fAriane"
+                     href="categorie.php?idCat=<?php echo $tabCatId[$i]; ?>&niv=<?php echo $i; ?>"><?php echo $tabCat[$i]; ?></a>
+                <?php
+            }
+            // nom du dispositif
+            ?>
+            > <?php echo $nomDis; ?>
+>>>>>>> b53d3d67c64b4d5a9744dde331490ffac0cba918
         </p>
     </div>
 

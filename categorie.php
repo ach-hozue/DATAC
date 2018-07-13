@@ -8,8 +8,11 @@ mysqli_set_charset($BDD, "utf8");
 $niv =  htmlentities($_GET["niv"]);
 $idCat =  htmlentities($_GET["idCat"]);
 
+<<<<<<< HEAD
 $bool=false;
 
+=======
+>>>>>>> b53d3d67c64b4d5a9744dde331490ffac0cba918
 // Recherche de l’indentifiant et du nom de la catégorie sur laquelle on vient de cliquer et la déficience à laquelle elle appartient
 $RqtRecup = "SELECT * FROM deficience, categorie WHERE id_deficience = id_def_cat AND id_categorie = $idCat";
 $TabRecup = mysqli_query($BDD, $RqtRecup);
@@ -73,7 +76,11 @@ for ($i = 1; $i < $niv; $i++) {
             // Pour les sous-catégories
             for ($i = 1; $i <= $niv; $i++) {
                 ?>
+<<<<<<< HEAD
                 // <a class="fAriane"
+=======
+                > <a class="fAriane"
+>>>>>>> b53d3d67c64b4d5a9744dde331490ffac0cba918
                     href="categorie.php?idCat=<?php echo $tabCatId[$i]; ?>&niv=<?php echo $i; ?>"><?php echo $tabCat[$i]; ?></a>
                 <?php
             }
@@ -106,7 +113,11 @@ for ($i = 1; $i < $niv; $i++) {
                     ?>
                     <!--boutons des dispositifs-->
                     <div class="col-sm-offset-5">
+<<<<<<< HEAD
                         <a class="btn btn-primary btnparcours" href="dispositif.php?bool=<?php echo $bool ?>&idDis=<?php echo $LgnDis["id_dispositif"]; ?>"><?php echo $LgnDis["nom_dis"]; ?></a>
+=======
+                        <a class="btn btn-primary btnparcours" href="dispositif.php?idDis=<?php echo $LgnDis["id_dispositif"]; ?>"><?php echo $LgnDis["nom_dis"]; ?></a>
+>>>>>>> b53d3d67c64b4d5a9744dde331490ffac0cba918
                     </div>
                     <br>
                     <?php

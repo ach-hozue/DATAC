@@ -185,7 +185,11 @@
                             <div class="about1">
                             <a href="situation.php?idSit=2">
                             <img class="ImageRecherche pic2Ab" src="images\École travail.png" />
+<<<<<<< HEAD
                                 <h3>École-Travail</h3></a>
+=======
+                                <h3>École/Travail</h3></a>
+>>>>>>> b53d3d67c64b4d5a9744dde331490ffac0cba918
                                 <p>
                                     L'école et le travail sont des lieux importants où la situ ation de handicap est importante.<span class="listebleu">[Lire la suite]</span></a>
                                 </p>
@@ -206,13 +210,21 @@
                                 Les jeux sont des moments précieux pour pouvoir décompresser...<span class="listebleu">[Lire la suite]</span></a>
 
                                 </p>
+<<<<<<< HEAD
+=======
+
+>>>>>>> b53d3d67c64b4d5a9744dde331490ffac0cba918
                             </div>
                         </div>
                         <div class="col-md-6 col-xs-3">
                             <div class="about1">
                             <a href="situation.php?idSit=4">
                             <img class="ImageRecherche pic2Ab" src="images/Soins.png" />
+<<<<<<< HEAD
                                 <h3>Soins-Traitement</h3></a>
+=======
+                                <h3>Soins/Traitemnt</h3></a>
+>>>>>>> b53d3d67c64b4d5a9744dde331490ffac0cba918
                                 <p>
                                     L'accès au soin peut être rendu difficile de part une mauvaise gestion du handicap<span class="listebleu">[Lire la suite]</span></a>
                                 </p>
