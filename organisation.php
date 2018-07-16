@@ -40,10 +40,10 @@
         <article>
             <br>
             <fieldset>
-                <legend class="sousTitre">Plan du site</legend>
+                <h2 class="sousTitre">Plan du site</h2><br>
                 <p class="col-sm-offset-1 col-sm-10 txtOrga">
                     Le plan s’articule actuellement autour de 5 déficiences. Les organigrammes ci-dessous
-                    représente l’architecture au sein de ces 5 déficiences. Ceci permettent de connaître
+                    représentent l’architecture au sein de ces 5 déficiences. Ceux-ci permettent de connaître
                     l’ensemble des chemins possibles à partir d’une déficience. Toute catégorie peut
                     contenir des dispositifs, mais généralement ce sont les dernières catégories qui
                     possèdent des dispositifs.
@@ -286,7 +286,7 @@
             <fieldset>
 
                 <!-- lien de téléchargement des organigrammes -->
-                <legend>Téléchargements des organigrammes</legend>
+                <h2 class="sousTitre">Téléchargement des organigrammes</h2><br>
                 <ul class="col-sm-offset-1 col-sm-10 txtOrga">
                     <li>Télécharger l&rsquo;organigramme des <a href="images/organigramme/1.xmind">d&eacute;ficiences visuelles</a> au format Xmind</li>
                     <li>Télécharger l&rsquo;organigramme des <a href="images/organigramme/2.xmind">d&eacute;ficiences auditives</a> au format Xmind</li>
@@ -299,11 +299,11 @@
             <br/>
         </article>
     </section>
-    <div class="row" id="rFooter">
-        <footer style="text-align:center">
-            <p><a href="equipe.php">Qui sommes nous ?</a> — <a href="accueil.php">Site DATÀC</a></p>
-            <p>&copy; DATÀC – Tous droits réservés</p>
-        </footer>
+    <footer class="row">
+        <div class="col-lg-12">
+            <?php include("bas.php"); ?>
+        </div>
+    </footer>
     </div>
 </div>
 <!-- definition de la flèche précédent (retour à accueil) -->

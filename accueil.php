@@ -25,7 +25,7 @@
     <div class="row" id="r3">
         <h3>Bienvenue</h3>
         <p class="col-sm-offset-1 col-sm-10">
-            Ce site présente un catalogue exhaustif des dispositifs et aides techniques à la communication,
+            Ce site présente un catalogue de dispositifs et aides techniques à la communication,
             destiné à toutes personnes en situation de handicap, leurs proches ainsi que les professionnels de santé.
         </p>
     </div>

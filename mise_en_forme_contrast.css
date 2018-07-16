@@ -367,13 +367,6 @@ a.ariane {
 
 }
 
-/*bouton changement fixé dans le coin bast-droit*/
-.changeContraste{
-    position:fixed;
-    bottom: 5px;
-    left: 90%;
-}
-
 footer{
     color: #E7F6FA;
 }

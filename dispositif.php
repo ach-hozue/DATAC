@@ -304,19 +304,5 @@ for ($i = 1; $i < $niv; $i++) {
     <!-- retour à la page de choix de dispositif précédente -->
     <a class="pagePreced" href="categorie.php?idCat=<?php echo $tabCatId[$niv];?>&niv=<?php echo $niv; ?>"><img class="logoRetour" src="images/retour_fleche.png"> </a>
 </div>
-<!--Changement de feuille de style-->
-<a class="btn btn-primary changeContraste" href="#" onclick="changeContrast()">Contraste élevé</a>
-<script>
-    function changeContrast() {
-        console.log($('#css').attr('href'));
-        if($('#css').attr('href') == 'mise_en_forme.css') {
-            $('#css').replaceWith('<link id=css rel=stylesheet href=mise_en_forme_contrast.css>');
-            $('.changeContraste').text('Contraste standard');
-        }else{
-            $('#css').replaceWith('<link id=css rel=stylesheet href=mise_en_forme.css>');
-            $('.changeContraste').text('Contraste élevé');
-        }
-    }
-</script>
 </body>
 </html>
