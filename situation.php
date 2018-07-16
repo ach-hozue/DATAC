@@ -148,11 +148,9 @@
 																						$déficience=$LgnDeficience['id_def_cat'];
 																					}
 																				?>
-<<<<<<< HEAD
 																					<a  href="categorieSituation.php?idNiv=<?php echo $LgnDeficience["niveau"];?>&idCat=<?php echo $LgnDeficience["id_categorie"];?>&idSsSit=<?php echo $idSituationCategorie ?>&idSit=<?php echo $idSit ?>&niv=<?php echo $LgnDeficience['niveau'] ?>" class="sousCat2"><?php echo $LgnDeficience['nom_cat'] ?> </a> <!--on affiche le bouton--> 
-=======
-																					<a  href="categorieSituation.php?idNiv=<?php echo $LgnDeficience["niveau"];?>&idCat=<?php echo $LgnDeficience["id_categorie"];?>&idSsSit=<?php echo $idSituationCategorie ?>&idSit=<?php echo $idSit ?>" class="sousCat2"><?php echo $LgnDeficience['nom_cat'] ?> </a> <!--on affiche le bouton--> 
->>>>>>> b53d3d67c64b4d5a9744dde331490ffac0cba918
+ 
+
 																					<?php
 																				}
 																			}
@@ -232,11 +230,9 @@
 																	$déficience=$LgnDeficience2['id_def_cat'];
 																}
 																?>
-<<<<<<< HEAD
 																<a href="categorieSituation.php?idNiv=<?php echo $LgnDeficience2["niveau"];?>&idCat=<?php echo $LgnDeficience2["id_categorie"];?>&idSsSit=<?php echo $idSituation ?>&idSit=<?php echo $idSit ?>&niv=<?php echo $LgnDeficience['niveau'] ?>" class="sousCat2"><?php echo $LgnDeficience2['nom_cat'] ?></a>
-=======
-																<a href="categorieSituation.php?idNiv=<?php echo $LgnDeficience2["niveau"];?>&idCat=<?php echo $LgnDeficience2["id_categorie"];?>&idSsSit=<?php echo $idSituation ?>&idSit=<?php echo $idSit ?>" class="sousCat2"><?php echo $LgnDeficience2['nom_cat'] ?></a>
->>>>>>> b53d3d67c64b4d5a9744dde331490ffac0cba918
+
+
 																<?php
 															}
 														}
@@ -269,24 +265,6 @@
 	</div>
 	<!-- definition de la flèche précédent (retour à accueil) -->
 	<a class="pagePreced" href="accueil.php"><img class="logoRetour" src="images/retour_fleche.png"> </a>
-	<!--Changement de feuille de style-->
-	<a class="btn btn-primary changeContraste" href="#" onclick="changeContrast()">Contraste élevé</a>
-	<script>
-		function changeContrast() 
-		{
-			console.log($('#css').attr('href'));
-			if($('#css').attr('href') == 'mise_en_forme.css')
-			{
-				$('#css').replaceWith('<link id=css rel=stylesheet href=mise_en_forme_contrast.css>');
-				$('.changeContraste').text('Contraste standard');
-			}
-			else
-			{
-				$('#css').replaceWith('<link id=css rel=stylesheet href=mise_en_forme.css>');
-				$('.changeContraste').text('Contraste élevé');
-			}
-		}
-	</script>
 	</body>
 		<script type="text/javascript">
 			function toggle_div(bouton, id) 

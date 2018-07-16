@@ -4,7 +4,7 @@
 require("connect.php");
 mysqli_set_charset($BDD, "utf8");
 
-<<<<<<< HEAD
+
 // Récupération des variables
 $idSousSit =  htmlentities($_GET["idSsSit"]);
 $idCat = htmlentities($_GET["idCat"]);
@@ -20,13 +20,7 @@ $nomCat = $LgnCat["nom_cat"];
 
 
 // Récupération du nom de la situation
-=======
-// Récupération du niveau et du nom de la catégorie sur laquelle on vient de cliquer
-$idSousSit =  htmlentities($_GET["idSsSit"]);
-$idCat = htmlentities($_GET["idCat"]);
-$idSit =  htmlentities($_GET["idSit"]);
-$niv= htmlentities($_GET["idNiv"]);
->>>>>>> b53d3d67c64b4d5a9744dde331490ffac0cba918
+
 $RqtSit = "SELECT * FROM situation WHERE id_sit_cat = $idSit AND niveau=1";
 $TabSit = mysqli_query($BDD, $RqtSit);
 $LgnSit = mysqli_fetch_array($TabSit);
@@ -38,7 +32,6 @@ $LgnSousSit = mysqli_fetch_array($TabSousSit);
 $nomSousSit=$LgnSousSit['nom_sit'];
 // $idSousSit=$LgnSit['id_sit_cat'];
 
-<<<<<<< HEAD
 $TabCategorie[0]=$nomSousSit;
 $TabCategorie[$nivCat]=$nomCat;
 
@@ -55,8 +48,7 @@ for ($i = 1; $i < $nivCat; $i++) {
     mysqli_free_result($TabCatPrec);
 }
 
-=======
->>>>>>> b53d3d67c64b4d5a9744dde331490ffac0cba918
+
 ?>
 <html>
 <head>
@@ -82,7 +74,7 @@ for ($i = 1; $i < $nivCat; $i++) {
         <!--Fil d’Ariane-->
         <p class="ariane col-sm-offset-1">
             <a class="ariane" href="accueil.php">Accueil</a>
-<<<<<<< HEAD
+
             // <a class="fAriane" href="situation.php?idSit=<?php echo $idSit; ?>"><?php echo $nomSit ?> // <?php echo $TabCategorie[0]; ?></a>
             <?php  
             for ($i = 1; $i <= $nivCat; $i++) 
@@ -92,9 +84,6 @@ for ($i = 1; $i < $nivCat; $i++) {
             <?php
             }
             ?>
-=======
-            // <a class="fAriane" href="situation.php?idSit=<?php echo $idSit; ?>"><?php echo $nomSit ?>//<?php echo $LgnSousSit['nom_sit']; ?></a>
->>>>>>> b53d3d67c64b4d5a9744dde331490ffac0cba918
 
         </p>
     </div>
@@ -125,11 +114,7 @@ for ($i = 1; $i < $nivCat; $i++) {
                     ?>
                     <!--boutons des dispositifs-->
                     <div class="col-sm-offset-5">
-<<<<<<< HEAD
                         <a class="btn btn-primary btnparcours" href="dispositif.php?bool=<?php echo $bool ?>&idSit=<?php echo $idSit ?>&idSsSit=<?php echo $idSousSit ?>&idDis=<?php echo $LgnDis["id_dispositif"]; ?>"><?php echo $LgnDis["nom_dis"]; ?></a>
-=======
-                        <a class="btn btn-primary btnparcours" href="dispositif.php?idDis=<?php echo $LgnDis["id_dispositif"]; ?>"><?php echo $LgnDis["nom_dis"]; ?></a>
->>>>>>> b53d3d67c64b4d5a9744dde331490ffac0cba918
                     </div>
                     <br>
                     <?php
@@ -192,11 +177,8 @@ for ($i = 1; $i < $nivCat; $i++) {
                                 <!--bouton "i"-->
                                 <a href="<?php echo '#'.$data["id_categorie"].''; ?>" class="glyphicon glyphicon-info-sign <?php echo 'modal'.$data["id_categorie"].''; ?>" name="<?php echo $data["nom_cat"]; ?>"></a>
                                 <!--definition du bouton-->
-<<<<<<< HEAD
                                 <a class="btn btn-primary btnparcours" href="categorieSituation.php?idSit=<?php echo $idSit ?>&idSsSit=<?php echo $idSousSit ?>&idCat=<?php echo $data["id_categorie"]; ?>&niv=<?php echo $nivCat +1; ?>"><?php echo $data["nom_cat"]; ?></a>
-=======
-                                <a class="btn btn-primary btnparcours" href="categorie.php?idCat=<?php echo $data["id_categorie"]; ?>&niv=<?php echo $niv + 1; ?>"><?php echo $data["nom_cat"]; ?></a>
->>>>>>> b53d3d67c64b4d5a9744dde331490ffac0cba918
+
                                 <!-- definition de la boite modal -->
                                 <script type="text/javascript">
                                     $("<?php echo '.modal'.$data["id_categorie"].''; ?>").fancybox({
@@ -223,11 +205,8 @@ for ($i = 1; $i < $nivCat; $i++) {
                                 <!-- icon de modal invisible -->
                                 <a class="glyphicon glyphicon-info-sign" style="color: transparent" name="<?php echo $data["nom_cat"]; ?>"></a>
                                 <!-- definition du bouton -->
-<<<<<<< HEAD
                                 <a class="btn btn-primary btnparcours" href="categorieSituation.php?idSit=<?php echo $idSit ?>&idSsSit=<?php echo $idSousSit ?>&idCat=<?php echo $data["id_categorie"]; ?>&niv=<?php echo $nivCat +1; ?>"><?php echo $data["nom_cat"]; ?></a>
-=======
-                                <a class="btn btn-primary btnparcours" href="categorie.php?idCat=<?php echo $data["id_categorie"]; ?>&niv=<?php echo $niv + 1; ?>"><?php echo $data["nom_cat"]; ?></a>
->>>>>>> b53d3d67c64b4d5a9744dde331490ffac0cba918
+
                             </div>
                             <br>
                             <?php
@@ -250,5 +229,5 @@ for ($i = 1; $i < $nivCat; $i++) {
     </div>
 </div>
 <!-- definition de la flèche précédent (retour à accueil) -->
-<a class="pagePreced" href="situation.php?idSit=<?php echo $idSousSit ?>"><img class="logoRetour" src="images/retour_fleche.png"> </a>
+<a class="pagePreced" href="situation.php?idSit=<?php echo $idSit ?>"><img class="logoRetour" src="images/retour_fleche.png"> </a>
 </html>
