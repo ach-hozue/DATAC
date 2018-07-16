@@ -68,7 +68,7 @@ for ($i = 1; $i < $nivCat; $i++) {
 <!--container-fluid : div avec possibilitée de placement des éléments grâce à bootstrap (row, col,...);les éléments remplissent tout l'écran-->
 <div class="container-fluid">
     <!--header = bannière blance avec logos, connexion et recherche + titre sur fond bleu-->
-    <?php include("header.php"); ?>
+    
     <!--suite bannière bleu (après titre)-->
     <div class="row" id="rArianne">
         <!--Fil d’Ariane-->
