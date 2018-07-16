@@ -229,5 +229,5 @@ for ($i = 1; $i < $nivCat; $i++) {
     </div>
 </div>
 <!-- definition de la flèche précédent (retour à accueil) -->
-<a class="pagePreced" href="situation.php?idSit=<?php echo $idSousSit ?>"><img class="logoRetour" src="images/retour_fleche.png"> </a>
+<a class="pagePreced" href="situation.php?idSit=<?php echo $idSit ?>"><img class="logoRetour" src="images/retour_fleche.png"> </a>
 </html>
