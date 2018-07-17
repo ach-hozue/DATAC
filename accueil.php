@@ -91,7 +91,7 @@
         
         <div class="niveau">
 
-            <div class="horL" id="niveau1"  style="display:none;">
+            <div id="niveau1"  style="display:none;">
                 <div class="container">
                     <div class="row about">
                         <div class="col-md-6">
@@ -162,7 +162,7 @@
                 </div>
             </div>
             <br/>
-            <div class="horL2" id="niveau2"  style="display:none;">
+            <div  id="niveau2"  style="display:none;">
                 <div class="container">
                     <div class="row about">
                         <div class="col-md-6 ">

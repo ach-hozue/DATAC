@@ -94,6 +94,7 @@ img {
     .navbar-fixed-top {
         height: 120px;
     }
+
 }
 
 @media (max-width: 1050px) { 
@@ -627,6 +628,7 @@ a:link {
     transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 
+
 .iconeSituation:hover{
     cursor: pointer;
     background-color: #C1EBF7;
@@ -723,10 +725,6 @@ a:link {
         display:none;
     }  
 
-    .horL, .horL2 {
-       
-        z-index: 99999;
-    }
 }
 @media screen and (max-width: 1229px){
 	.pic1Ab{
@@ -917,31 +915,6 @@ margin-top: 51px;
     border-radius: 15px;
 }
 
-.horL{
-overflow: auto;
-    margin: auto;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 1170px;
-    height: 500px;
-    content: '';
-    z-index: 1;
-	background: url(images/horL.png) no-repeat;
-}
-
-.horL2{
-    overflow: auto;
-        margin: auto;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 1170px;
-        height: 500px;
-        content: '';
-        z-index: 1;
-        background: url(images/horL_petit.png) no-repeat;
-    }
 
 div.spoiler {
     padding: 10px;
@@ -1004,6 +977,8 @@ div.spoiler div.contenuSpoiler {
     border: 1px solid #ffffff;
     display:block;
     margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     width: 70%;
     border-radius : 5px;
     padding: 0px;
