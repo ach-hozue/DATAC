@@ -8,18 +8,18 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand col-xs-6 col-sm-3 col-md-3" target="_blank" href="https://fracturesnumeriques.fr/">
+      <a class="navbar-brand col-xs-6 col-sm-4 col-md-3" target="_blank" href="https://fracturesnumeriques.fr/">
             <img id="imgFract" class="img-responsive" src="images/fractures_logo.png"/>
             <img id="imgFractContrast" class="img-responsive" src="images/fractures_logo_contrast.png"/>
         </a>
-        <a class="navbar-brand col-sm-3" href="accueil.php">
+        <a class="navbar-brand col-sm-2 hidden-xs" href="accueil.php">
             <img id="imgDatac" class="img-responsive" src="images/logo_datac.svg"/>
             <img id="imgDatacContrast" class="img-responsive" src="images/logo_datac_contraste.svg"/>
         </a>
     </div>
     <div class="collapse navbar-collapse" id="navbar">
         <ul class="nav navbar-nav navbar-right">
-            <li class="btn_petit_ecran" style="display:none;"><a href="accueil.php">Page d'accueil DATÀC</a></li>
+            <li><a href="accueil.php" class="btn">Accueil</a></li>
             <li><a class="btn btn-primary changeContraste" href="#" onclick="changeContrast()">Contraste élevé</a></li>
             <li><?php include("bouton_recherche.php"); ?></li>            
             <li><?php include("bouton_connexion.php"); ?></li>

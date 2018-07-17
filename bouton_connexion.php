@@ -1,28 +1,19 @@
+<?php
+    if(empty($_SESSION['connecte'])){
+        session_start();
+    }
+    else {
+        session_destroy();
+        session_start();
+    }
+?>
 <p>
-
-    <script>
-        if(screen.width<767){
-            <?php
-            if(empty($_SESSION['connecte'])){
-                session_destroy();
-                session_start();
-            }
-            ?>
-        }else{
-            <?php
-            if(empty($_SESSION['connecte'])){
-                session_start();
-            }
-            ?>
-        }
-    </script>
-
     <?php
     //test : utilisateur pas encore connecté ?
     if (empty($_SESSION['connecte']) && empty($_SESSION['idpers']))
     {
         ?>
-        <a href="gestion/page_connexion.php" class="btn btn-primary">Connexion</a>
+        <a href="gestion/page_connexion.php" class="btn btn-primary btn-connexion">Connexion</a>
         <?php
     }
 
@@ -30,7 +21,7 @@
     {
 
         ?>
-        <a href="./gestion/accueil_gestionnaire.php" class="btn btn-primary">Déjà connecté</a>
+        <a href="./gestion/accueil_gestionnaire.php" class="btn btn-primary btn-connexion">Déjà connecté</a>
         <?php
     }
     ?>
