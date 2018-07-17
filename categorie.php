@@ -67,7 +67,7 @@ for ($i = 1; $i < $niv; $i++) {
     <!--suite bannière bleu (après titre)-->
     <div class="row" id="rArianne">
         <!--Fil d’Ariane-->
-        <p class="ariane col-sm-offset-1">
+        <br><p class="ariane col-sm-offset-1">
             <a class="ariane" href="accueil.php">Accueil</a>
             // <a class="fAriane" href="deficience.php?idDef=<?php echo $tabCatId[0]; ?>"><?php echo $tabCat[0]; ?></a>
             <?php

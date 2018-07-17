@@ -298,6 +298,7 @@ h3 {
 .navbar-default .navbar-nav > li > a.changeContraste {
     background-color: #333333;
     border-color: #333333;
+    color:white;
 }
 
 .btn.btn-primary:hover, .navbar-default .navbar-nav > li > a:hover{
@@ -314,7 +315,9 @@ h3 {
 /*titre dispositif*/
 .titre_dispositif {
     text-align: center;
-    font: 16px Geneva;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Exo', 'Roboto', 'sans-serif';
     color: #333333;
 }
 

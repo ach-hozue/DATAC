@@ -28,6 +28,131 @@ img {
     width: 70%;
 }
 
+/* Barre de navigation */
+
+.navbar {
+    background-color: #333333;
+}
+
+#imgFract, #imgDatac{
+    display: none;
+}
+
+#imgFractContrast, #imgDatacContrast{
+    display: block;
+}
+
+.navbar-fixed-top .container-fluid, 
+.navbar-fixed-top .navbar-header, 
+.navbar-fixed-top .navbar-brand, 
+.navbar-fixed-top .navbar-brand > img {
+    height: 100%;
+    width: auto;
+}
+    
+#imgDatac, #imgDatacContrast{
+    margin-top: 10%;
+    height: 70%;
+}
+
+.navbar-header .navbar-toggle{
+    margin-top: 30px;
+    border: 2px solid white;
+    background-color:transparent;
+}
+
+.navbar-toggle .icon-bar{
+    border: 1px solid white;
+}
+
+.navbar-header .navbar-toggle:hover{
+    background-color:black;
+}
+
+#navbar .navbar-right .btnGrand {
+    font-size: 12px;
+    position: relative;
+    top: -2px;
+    margin-right: 0;
+}
+
+@media(min-width: 1100px) {
+    
+    #navbar .navbar-right {
+        position: relative;
+        top: 45px;
+    }
+
+    #navbar .navbar-right .recherchePetit {
+        margin-top: 2px;
+    }
+
+    #navbar .navbar-right li:first-child {
+        display: none !important;
+        top: 3px;
+    }
+
+    #navbar .navbar-right .btn-connexion, #navbar .navbar-right .changeContraste {
+        position: relative;
+        top: 3px;
+    }
+
+    .navbar-fixed-top {
+        height: 120px;
+    }
+}
+
+@media (max-width: 1100px) { 
+    body {
+        padding-top: 100px;
+    }
+    .navbar-header {
+        height: 100px !important;
+    }
+    .navbar-header {
+    float: none;
+    }
+    .navbar-toggle {
+    display: block;
+    }
+    .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+    display: none!important;
+    }
+    .navbar-nav {
+    float: none!important;
+    margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+        margin-top: 25px;
+    }
+    .navbar-nav>li .bouton_recherche {
+        margin-left: 10px;
+    }
+    .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+    .navbar-text {
+    float: none;
+    margin: 15px 0;
+    }
+    .navbar-collapse.collapse.in {
+    display: block!important;
+    }
+    .collapsing {
+    overflow: hidden!important;
+    }
+    .btn.btn-primary, .navbar-default .navbar-nav > li > a{
+        margin-left:50px;
+        margin-right: 50px;
+    }
+}
+
 /*changement couleur des liens*/
 a{
     color: #E7F6FA;
@@ -106,15 +231,43 @@ h3 {
     text-align: center;
 }
 
-/*couleurs des boutons*/
-.btn-primary {
-    background-color: #00ABDC;
+/* Boutons*/
+
+.btn.btn-primary, .navbar-default .navbar-nav > li > a {
+    background-color: #333333;
+    padding-top: 6px;
+    padding-right: 12px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    display : initial !important;
+    color:white;
+    margin-left: 10px;
+    margin-right: 10px;
+    border:2px solid white;
+    font-size: 18px;
+}
+
+.navbar-default .navbar-nav > li > a.changeContraste {
+    background-color: #333333;
+    border:2px solid white;
+    color: white;
+}
+
+.btn.btn-primary:hover, .navbar-default .navbar-nav > li > a:hover{
+    background-color: black;
+    color:white;
+}
+
+.navbar-default .navbar-nav > li > a.changeContraste:hover {
+    background-color: black;
 }
 
 /*titre dispositif*/
 .titre_dispositif {
     text-align: center;
-    font: 16px Geneva;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Exo', 'Roboto', 'sans-serif';
     color: white;
 }
 

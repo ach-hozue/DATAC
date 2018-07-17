@@ -72,7 +72,7 @@ for ($i = 1; $i < $nivCat; $i++) {
     <!--suite bannière bleu (après titre)-->
     <div class="row" id="rArianne">
         <!--Fil d’Ariane-->
-        <p class="ariane col-sm-offset-1">
+        <br><p class="ariane col-sm-offset-1">
             <a class="ariane" href="accueil.php">Accueil</a>
 
             // <a class="fAriane" href="situation.php?idSit=<?php echo $idSit; ?>"><?php echo $nomSit ?> // <?php echo $TabCategorie[0]; ?></a>
