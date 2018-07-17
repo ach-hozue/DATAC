@@ -42,7 +42,7 @@
         <article>
         <div class="row" >
             <div class="col-md-offset-2 col-md-4 bar" >
-                <div class="progB chart " id="niveau1B" href="#bouton"  onclick="afficherMasquerNiveau('niveau1')">
+                <div class=" chart " id="niveau1B" href="#bouton"  onclick="afficherMasquerNiveau('niveau1')">
                         <div class="iconechiffre" >1</div>
                 </div>
                 <div class="texte" id="niveau1B" href="#bouton"  onclick="afficherMasquerNiveau('niveau1')">
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <div class="col-md-4 bar" >
-                <div class="progB chart " id="niveau2B" href="#bouton"  onclick="afficherMasquerNiveau('niveau2')">
+                <div class=" chart " id="niveau2B" href="#bouton"  onclick="afficherMasquerNiveau('niveau2')">
                         <div class="iconechiffre">2</div>
                 </div>
                 <div class="texte"  id="niveau2B" href="#bouton"  onclick="afficherMasquerNiveau('niveau2')">
@@ -94,7 +94,7 @@
             <div class="horL" id="niveau1"  style="display:none;">
                 <div class="container">
                     <div class="row about">
-                        <div class="col-md-6 col-xs-3">
+                        <div class="col-md-6">
                             <div class="about1">
                             <a href="deficience.php?idDef=1">
                             <img class="ImageRecherche pic1Ab"  src="images/Visuel.png" />
@@ -104,7 +104,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-6 col-xs-3">
+                        <div class="col-md-6 ">
                             <div class="about1">
                             <a href="deficience.php?idDef=2">
                             <img class="ImageRecherche pic2Ab" src="images/Auditif.png" />
@@ -120,7 +120,7 @@
             
                 <div class="container">
                     <div class="row about">
-                        <div class="col-md-6 col-xs-3">
+                        <div class="col-md-6 ">
                             <div class="about1">
                             <a href="deficience.php?idDef=3">                          
                             <img class="ImageRecherche pic1Ab" src="images/Moteur.png" />
@@ -132,7 +132,7 @@
 
                             </div>
                         </div>
-                        <div class="col-md-6 col-xs-3">
+                        <div class="col-md-6 ">
                             <div class="about1">
                             <a href="deficience.php?idDef=4">
                             <img class="ImageRecherche pic2Ab" src="images/Mental.png" />
@@ -148,7 +148,7 @@
             
                 <div class="container">
                     <div class="row about">
-                        <div class="col-md-6 col-xs-3">
+                        <div class="col-md-6 ">
                             <div class="about1">
                             <a href="deficience.php?idDef=5">
                             <img class="ImageRecherche pic1Ab" src="images/Parole.png" />
@@ -165,17 +165,17 @@
             <div class="horL2" id="niveau2"  style="display:none;">
                 <div class="container">
                     <div class="row about">
-                        <div class="col-md-6 col-xs-3">
+                        <div class="col-md-6 ">
                             <div class="about1">
                             <a href="situation.php?idSit=1">
                             <img class="ImageRecherche pic1Ab"  src="images\Manger.png" />
                                 <h3>Repas</h3></a>
                                 <p>
-                                Le repas est un élèment essentiel de la vie de tous les jours<span class="listeBleue">[Lire la suite]</span></a>
+                                Le repas est un élèment essentiel de la vie de tous les jours <span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-6 col-xs-3">
+                        <div class="col-md-6">
                             <div class="about1">
                             <a href="situation.php?idSit=2">
                             <img class="ImageRecherche pic2Ab" src="images\École travail.png" />
@@ -193,25 +193,25 @@
             
                 <div class="container">
                     <div class="row about">
-                        <div class="col-md-6 col-xs-3">
+                        <div class="col-md-6">
                             <div class="about1">
                             <a href="situation.php?idSit=3">                          
                             <img class="ImageRecherche pic1Ab" src="images/Loisirs.png" />
                                 <h3>Loisirs</h3></a>
                                 <p>
-                                Les jeux sont des moments précieux pour pouvoir décompresser...<span class="listeBleue">[Lire la suite]</span></a>
+                                Les jeux sont des moments précieux pour pouvoir décompresser <span class="listeBleue">[Lire la suite]</span></a>
 
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-6 col-xs-3">
+                        <div class="col-md-6 ">
                             <div class="about1">
                             <a href="situation.php?idSit=4">
                             <img class="ImageRecherche pic2Ab" src="images/Soins.png" />
                                 <h3>Soins-Traitement</h3></a>
 
                                 <p>
-                                    L'accès au soin peut être rendu difficile de part une mauvaise gestion du handicap<span class="listeBleue">[Lire la suite]</span></a>
+                                    L'accès au soin peut être rendu difficile de part une mauvaise gestion du handicap <span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
@@ -246,13 +246,15 @@
             if (id=="niveau1")	{
 
                 document.getElementById("niveau2").style.display="none";
-                document.getElementById("niveau2B").style.backgroundColor="#E7F6FA";
+                document.getElementById(id+"B").style.borderRadius= '50%';
+                document.getElementById("niveau2B").style.backgroundColor="";
                 document.getElementById("niveau2B").style.color="#00ABDC";
             }
             else if (id=="niveau2")	{
 
                 document.getElementById("niveau1").style.display="none";
-                document.getElementById("niveau1B").style.backgroundColor="#E7F6FA";
+                document.getElementById(id+"B").style.borderRadius= '50%';
+                document.getElementById("niveau1B").style.backgroundColor="";
                 document.getElementById("niveau1B").style.color="#00ABDC";
             }
             }

@@ -420,8 +420,7 @@ a.ariane {
     .pagePreced{
         width: 80px;
 	}
-	
-	
+    
 }
 /************************/
 
@@ -625,13 +624,15 @@ a:link {
 	}
 	.about p{
         text-align: left;
+        display: block;
 	}
     .chevron{
         display:none;
     }  
 
     .horL, .horL2 {
-        visibility: hidden;
+       
+        z-index: 99999;
     }
 }
 @media screen and (max-width: 1229px){
@@ -669,7 +670,8 @@ a:link {
         width:80px;
         margin-top: 20px;
     }
-	
+    
+
 }
 @media screen and (max-width: 460px) {
 	.pic2Ab{
@@ -689,8 +691,13 @@ a:link {
 	}
 	.about p{
 		margin-top: 30px !important;
-		text-align: left;
-	}
+        text-align: left;
+        display: block;
+        margin: 0 auto;
+    }
+
+   
+  
 	.Ama {
 	margin-top: 280px !important;
 	margin-bottom: 100px !important;
@@ -774,11 +781,11 @@ margin-top: 51px;
 	font-size: 18px;
 	line-height: 22px;
 	color: #666666;
-	font-family: 'Roboto', 'sans-serif';
+	font-family: 'Exo', 'sans-serif';
 	font-weight: 300;
 	margin-top: 12px;
 	margin-bottom: 0;
-    text-align: left;
+    text-align: justify;
 }
 
 .pic1Ab{

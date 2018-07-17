@@ -3,14 +3,16 @@
 
 body {
     border: black;
+    background-color: black;
     text-align: left;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font: 14px Times New Roman;
-    background-color: #000000;
-    /*supprime la bar blanche*/
+    font: 18px 'Roboto';
+    /*Supprime la barre blanche*/
     overflow: hidden;
     overflow-y: scroll;
+    /*Évite que le début de la page passe sous la barre de navigation*/
+    padding-top: 120px;
 }
 
 .tailleCommun{
@@ -383,9 +385,6 @@ footer{
     color: black;
 }
 
-button{
-    position:fixed;
-}
 
 span.listeBleue{
     font-size: 18px;
@@ -419,7 +418,7 @@ margin-top: 51px;
 .about p{
 	font-size: 18px;
 	line-height: 22px;
-	color: #666666;
+	color: white;
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 300;
 	margin-top: 12px;
@@ -564,6 +563,7 @@ div.spoiler div.contenuSpoiler {
     margin-top: 30px;
     font-weight: bold;
     font-size: 20px;
+    color:white;
 }
 
 .texteSituation{
@@ -644,10 +644,18 @@ div.spoiler div.contenuSpoiler {
     padding: 0px;
 }
 
+
+
+
 .chart{
     margin: 0 auto;
     position: relative;
     width: 70px;
     height: 70px;
     text-align: center;
+}
+
+.p{
+    color: white;
+    font-family: 'Roboto', 'sans-serif';
 }

@@ -230,7 +230,7 @@
 																	$déficience=$LgnDeficience2['id_def_cat'];
 																}
 																?>
-																<a href="categorieSituation.php?idNiv=<?php echo $LgnDeficience2["niveau"];?>&idCat=<?php echo $LgnDeficience2["id_categorie"];?>&idSsSit=<?php echo $idSituation ?>&idSit=<?php echo $idSit ?>&niv=<?php echo $LgnDeficience['niveau'] ?>" class="sousCat2"><?php echo $LgnDeficience2['nom_cat'] ?></a>
+																<a href="categorieSituation.php?idNiv=<?php echo $LgnDeficience2["niveau"];?>&idCat=<?php echo $LgnDeficience2["id_categorie"];?>&idSsSit=<?php echo $idSituation ?>&idSit=<?php echo $idSit ?>&niv=<?php echo $LgnDeficience2['niveau'] ?>" class="sousCat2"><?php echo $LgnDeficience2['nom_cat'] ?></a>
 
 
 																<?php
