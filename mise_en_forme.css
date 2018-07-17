@@ -394,7 +394,6 @@ a.ariane {
 
 /*paragraphe description du dispositif*/
 .descriptionProduit{
-    text-align: justify;
     margin-top: 10%;
     color: #333333;
 }
@@ -875,8 +874,8 @@ margin-top: 51px;
 	font-family: 'Exo', 'sans-serif';
 	font-weight: 300;
 	margin-top: 12px;
-	margin-bottom: 0;
-    text-align: justify;
+    margin-bottom: 0;
+    text-align: left;
 }
 
 .pic1Ab{

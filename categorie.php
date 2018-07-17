@@ -122,10 +122,7 @@ for ($i = 1; $i < $niv; $i++) {
         if (mysqli_num_rows($TabFin) != 0) {
             ?>
             <article>
-                <p class="col-sm-offset-1 col-sm-10 sousTitre">Il existe les catégories suivantes :</p>
-                <br>
-                <br>
-                <br>
+                <br><p class="col-sm-offset-1 col-sm-10 sousTitre">Il existe les catégories suivantes :</p><br><br><br><br>
                 <?php
                 // Recherche et affichage des toutes les sous-catégories relatives à la catégorie choisie
                 $RqtCatSuiv = "SELECT * FROM categorie WHERE id_cat_prec = $idCat AND niveau = ($niv+1)";

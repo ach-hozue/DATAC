@@ -114,7 +114,7 @@ mysqli_free_result($TabDispositifs);
                 $RqtResultatsDis = "SELECT * FROM dispositif WHERE id_dispositif IN (".implode(',',$tabResultats).") ORDER BY nom_dis";
                 $TabResultatsDis = mysqli_query($BDD, $RqtResultatsDis);
 
-                echo '<p class="sousTitre">Il existe les produits suivants :</p> <br>';
+                echo '<br><p class="sousTitre">Il existe les produits suivants :</p> <br><br><br>';
 
                 // affichage des résultats
                 while ($LgnResultatsDis = mysqli_fetch_array($TabResultatsDis))
@@ -129,7 +129,7 @@ mysqli_free_result($TabDispositifs);
             }
             else
             {
-                echo '<p class="sousTitre"> Pas de résultats</p>';
+                echo '<p class="sousTitre"> Pas de résultat</p>';
             }
 
             mysqli_close($BDD);

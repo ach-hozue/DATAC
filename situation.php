@@ -45,10 +45,7 @@
 		<!--bannière grise avec boutons catégories + modal(s) d'information(s)-->
 		<section class="row" id="rSect">
 			<article>
-				<p class="col-sm-offset-1 col-sm-10 sousTitre">Pour cette situation, il existe les catégories d'actions suivantes :</p>
-				<br>
-				<br>
-				<br>
+				<br><p class="col-sm-offset-1 col-sm-10 sousTitre">Pour cette situation, il existe les catégories d'actions suivantes :</p><br><br><br><br><br>
 				<?php
 				// Recupération des catégories de situation à afficher
 				$RqtSituation = "SELECT * FROM situation WHERE id_sit_cat = $idSit AND niveau = 2";

@@ -53,11 +53,7 @@ mysqli_free_result($TabDef);
     <section class="row" id="rSect">
 
         <article>
-            <p class="col-sm-offset-1 col-sm-10 sousTitre">Pour cette déficience, il y a les catégories de dispositifs
-                suivantes :</p>
-            <br>
-            <br>
-            <br>
+            <br><p class="col-sm-offset-1 col-sm-10 sousTitre">Pour cette déficience, il y a les catégories de dispositifs suivantes :</p><br><br><br><br>
             <?php
             // Recupération des catégories à afficher
             $RqtCat = "SELECT * FROM categorie WHERE id_def_cat = $idDef AND niveau = 1";
