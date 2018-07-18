@@ -22,8 +22,8 @@
         <!-- logo DATAC -->
         <div class="row">
             <a class="col-xs-push-2 col-xs-8" href="../accueil.php">
-                <img id="imgDatac" class="img-responsive" src="../images/datac_logo.png"/>
-                <img id="imgDatacContrast" class="img-responsive" src="../images/datac_logo_contrast.png"/>
+                <img id="imgDatac" class="img-responsive" src="../images/logo_datac.svg"/>
+                <img id="imgDatacContrast" class="img-responsive" src="../images/logo_datac_contrast.svg"/>
             </a>
         </div>
 

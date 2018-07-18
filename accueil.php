@@ -68,9 +68,17 @@
         $TabSit= mysqli_query($BDD, $RqtSit);
         $LgnSit = mysqli_fetch_array($TabSit);
    
-        $RqtDef = "SELECT * FROM deficience";
-        $TabDef = mysqli_query($BDD, $RqtDef); 
-        $LgnDef = mysqli_fetch_array ($TabDef)
+        function requete($identifiant,$BDD)
+        {
+            global $LgnDef;
+            $RqtDef = "SELECT * FROM deficience WHERE id_deficience=$identifiant";
+            $TabDef = mysqli_query($BDD, $RqtDef); 
+            $LgnDef = mysqli_fetch_array ($TabDef);
+            return $LgnDef;
+        }
+
+        global $LgnDef;
+        
         
         ?>
         <!--definition d'un modal -->
@@ -100,7 +108,7 @@
                             <img class="ImageRecherche pic1Ab"  src="images/Visuel.png" />
                                 <h3>Déficiences visuelles</h3></a>
                                 <p>
-                                    La vision est un des sens primordiaux dans la communication.<a href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
+                                    La vision est un des sens primordiaux dans la communication.<a onclick="<?php requete('1',$BDD) ?>" href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
@@ -110,7 +118,7 @@
                             <img class="ImageRecherche pic2Ab" src="images/Auditif.png" />
                                 <h3>Déficiences auditives</h3></a>
                                 <p>
-                                    Les déficiences auditives peuvent être un frein à la communication. <a href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
+                                    Les déficiences auditives peuvent être un frein à la communication. <a onclick="<?php requete('2',$BDD) ?>" href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
@@ -126,7 +134,7 @@
                             <img class="ImageRecherche pic1Ab" src="images/Moteur.png" />
                                 <h3>Déficiences motrices</h3></a>
                                 <p>
-                                    Pour communiquer, il est souvent nécessaire d’utiliser ses membres supérieurs. <a href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
+                                    Pour communiquer, il est souvent nécessaire d’utiliser ses membres supérieurs. <a onclick="<?php requete('3',$BDD) ?>" href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
 
                                 </p>
 
@@ -138,7 +146,7 @@
                             <img class="ImageRecherche pic2Ab" src="images/Mental.png" />
                                 <h3>Déficiences mentales et psychiques</h3></a>
                                 <p>
-                                    Le handicap mental (retard mental, dans le langage courant) est un trouble généralisé... <a href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
+                                    Le handicap mental (retard mental, dans le langage courant) est un trouble généralisé... <a  onclick="<?php requete('4',$BDD) ?>"  href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
@@ -154,7 +162,7 @@
                             <img class="ImageRecherche pic1Ab" src="images/Parole.png" />
                                 <h3>Déficiences de la parole et du langage</h3></a>
                                 <p>        
-                                    L’usage de la parole et du langage dans la communication est primordial. <a href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
+                                    L’usage de la parole et du langage dans la communication est primordial. <a  onclick="<?php requete('5',$BDD) ?>" href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
@@ -223,7 +231,7 @@
         //libère la ressource TabSit
         mysqli_free_result($TabSit);
         //libère la ressource TabDef
-        mysqli_free_result($TabDef);
+        
         //ferme la base de donnée
         mysqli_close($BDD);
         ?>

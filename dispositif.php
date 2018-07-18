@@ -303,6 +303,9 @@ for ($i = 1; $i < $niv; $i++) {
     </div>
     <!-- retour à la page de choix de dispositif précédente -->
     <a class="pagePreced" href="categorie.php?idCat=<?php echo $tabCatId[$niv];?>&niv=<?php echo $niv; ?>"><img class="logoRetour" src="images/retour_fleche.png"> </a>
+     
+    
+   
 </div>
 </body>
 </html>

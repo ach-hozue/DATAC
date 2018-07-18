@@ -12,7 +12,7 @@ $tuple = mysqli_fetch_array($monrs)['login'];
         <img class="img-responsive" src="../images/fractures_logo.png"/>
     </a>
     <a class="col-sm-3" href="../accueil.php">
-        <img class="img-responsive" src="../images/datac_logo.png"/>
+        <img class="img-responsive" src="../images/logo_datac.svg"/>
     </a>
     <div class="col-sm-4">
         <div class="row rightHead">
@@ -39,7 +39,7 @@ $tuple = mysqli_fetch_array($monrs)['login'];
     </div>
     <div class="row">
         <a  class="col-xs-offset-1 col-xs-5" href="../accueil.php">
-            <img class="img-responsive" src="../images/datac_logo.png"/>
+            <img class="img-responsive" src="../images/logo_datac.svg.png"/>
         </a>
         <div class=" col-xs-4 rightHeadPetit">
             <br>
