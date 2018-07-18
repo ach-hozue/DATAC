@@ -25,7 +25,7 @@
     <!--suite bannière bleu (après titre)-->
     <div class="row" id="rArianne">
         <!--Fil d’Ariane-->
-        <p class="ariane col-sm-offset-1">
+        <br><p class="ariane col-sm-offset-1">
             <a class="ariane" href="accueil.php">Accueil</a> // Plan du site
         </p>
     </div>
@@ -285,7 +285,7 @@
             <br>
             <fieldset>
 
-                <!-- lien de téléchargement des organigrammes -->
+                <!-- Liens de téléchargement des organigrammes -->
                 <h2 class="sousTitre">Téléchargement des organigrammes</h2><br>
                 <ul class="col-sm-offset-1 col-sm-10 txtOrga">
                     <li>Télécharger l&rsquo;organigramme des <a href="images/organigramme/1.xmind">d&eacute;ficiences visuelles</a> au format Xmind</li>

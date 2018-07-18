@@ -69,8 +69,8 @@
 						Nous tenions tout particulièrement à remercier la start-up <a href="http://iuserlab.com/" target="_blank">iUserLab</a>,
 						sans laquelle nous n’aurions pas de moteur de recherche.
 					</p>
-					<p style="text-align:center">
-						<a href="mailto:marie.guiraute@ensc.fr;marwa.mathlouthi@ensc.fr;emilie.roger@ensc.fr;alexia.tartas@ensc.fr;m.dulieu@outlook.fr">NOUS CONTACTER</a>
+					<br><p style="text-align:center">
+						<a href="mailto:m.dulieu@outlook.fr;achille.gautheron@ensc.fr;marie.guiraute@ensc.fr;louise.mathieu@ensc.fr;marwa.mathlouthi@ensc.fr;emilie.roger@ensc.fr;alexia.tartas@ensc.fr">NOUS CONTACTER</a>
 					</p>
                     </div>
 				</fieldset>
