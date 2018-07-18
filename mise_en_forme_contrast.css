@@ -180,7 +180,8 @@ a:hover{
 
 /*Bienvenue + texte bienvenue */
 #r3 {
-    font: 20px Exo serif;
+    font-size: 20px ;
+    font-family:'Exo' 'sans-serif';
     color: #E7F6FA;
 }
 
@@ -229,6 +230,7 @@ header {
 
 h3 {
     text-align: center;
+    color: white;
 }
 
 /* Boutons*/
@@ -532,11 +534,21 @@ footer{
     color: #E7F6FA;
 }
 
+.footer a{
+    border: 2px white solid;
+    padding: 3px;
+    border-radius: .3em;
+}
+
+.footer a:hover{
+    font-weight: bold;
+    text-decoration: none;
+}
+
 /*couleur bordure tableau et ecriture*/
 .tablink:link{
     color: black;
 }
-
 
 span.listeBleue{
     font-size: 18px;
@@ -561,12 +573,18 @@ span.listeBleue{
 	font-weight: 400;
 }
 .about h3{
-margin-top: 51px;
+    margin-top: 51px;
     font-size: 20px;
     color: #00ABDC;
     font-family: 'Exo', 'sans-serif';
     font-weight: 400;
 }
+
+.about h3:hover{
+    color: #C1EBF7;
+    text-decoration: underline;
+}
+
 .about p{
 	font-size: 18px;
 	line-height: 22px;
@@ -672,10 +690,11 @@ div.spoiler div.contenuSpoiler {
     border-radius: 50px;
     width: 80px;
     border: 3px solid #C1EBF7;
+    color: white;
     font-size: 40px;
     text-align: center;
     float: left;
-    font-family: 'Exo', sans-serif;
+    font-family: 'Exo', 'sans-serif';
     height: 80px;
     line-height: 80px;
     position: absolute; /* postulat de départ */

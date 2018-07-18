@@ -18,10 +18,10 @@
 <!--container-fluid : div avec possibilitée de placement des éléments grâce à bootstrap (row, col,...);les éléments remplissent tout l'écran-->
 <div class="container-fluid">
 
-    <!--header = bannière blanche avec logos, connexion et recherche + titre sur fond bleu-->
+    <!--Header = bannière blanche fixe en haut de l'écran-->
     <?php include("header.php"); ?>
 
-    <!--suite bannière bleu (après titre)-->
+    <!--suite bannière bleue (après titre)-->
     <div class="row" id="r3">
         <h3>Bienvenue</h3>
         <p class="col-sm-offset-1 col-sm-10">
@@ -41,7 +41,8 @@
     </section>
         <article>
         <div class="row" >
-            <div class="col-md-offset-2 col-md-4 bar" >
+            <h3>Veuillez sélectionner l'axe de votre choix :</h3><br>
+            <div class="col-md-offset-2 col-md-4 bar col-sm-6 col-xs-6" >
                 <div class=" chart " id="niveau1B" href="#bouton"  onclick="afficherMasquerNiveau('niveau1')">
                         <div class="iconechiffre" >1</div>
                 </div>
@@ -49,7 +50,7 @@
                     <p>Type de handicap</p>
                 </div>
             </div>
-            <div class="col-md-4 bar" >
+            <div class="col-md-4 bar col-sm-6 col-xs-6" >
                 <div class=" chart " id="niveau2B" href="#bouton"  onclick="afficherMasquerNiveau('niveau2')">
                         <div class="iconechiffre">2</div>
                 </div>

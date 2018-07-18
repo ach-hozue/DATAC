@@ -164,7 +164,8 @@ img {
 
 /*Bienvenue + texte bienvenue */
 #r3 {
-    font: 20px 'Exo' serif;
+    font-size: 20px;
+    font-family: 'Exo' serif;
 }
 
 @media (max-width: 767px){
@@ -261,7 +262,7 @@ h3 {
     text-align: center;
 }
 
-.p{
+.p {
     color: #00ABDC;
     font-family: 'Exo', 'sans-serif';
     font-size: 20px; 
@@ -340,7 +341,8 @@ h3 {
     max-height: 50vh;
     padding: 0 1.5em 1.5em 1.5em;
     overflow-y: auto;
-    font: 100% Roboto serif;
+    font-size: 100%;
+    font-family: 'Roboto', 'sans-serif';
 }
 
 /* Custom entrance animation */
@@ -392,6 +394,9 @@ a.ariane {
     color: #333333;
 }
 
+a.ariane:hover {
+    color: black;
+}
 /*paragraphe description du dispositif*/
 .descriptionProduit{
     margin-top: 10%;
@@ -862,12 +867,18 @@ span.listeBleue{
 	font-weight: 400;
 }
 .about h3{
-margin-top: 51px;
+    margin-top: 51px;
     font-size: 20px;
     color: #00ABDC;
     font-family: 'Exo', 'sans-serif';
     font-weight: 400;
 }
+
+.about h3:hover{
+    font-weight: bold;
+    color: #2e6da4;
+}
+
 .about p{
 	font-size: 18px;
 	line-height: 22px;
