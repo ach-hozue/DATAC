@@ -79,8 +79,6 @@
         }
 
         global $LgnDef;
-        
-        
         ?>
         <!--definition d'un modal -->
         <div style="display:none">
@@ -126,7 +124,6 @@
                     </div>
                 </div>
             
-            
                 <div class="container">
                     <div class="row about">
                         <div class="col-md-6 ">
@@ -147,14 +144,13 @@
                             <img class="ImageRecherche pic2Ab" src="images/Mental.png" />
                                 <h3>Déficiences mentales et psychiques</h3></a>
                                 <p>
-                                    Le handicap mental (retard mental, dans le langage courant) est un trouble généralisé... <a  onclick="<?php requete('4',$BDD) ?>"  href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
+                                    Le handicap mental (retard mental, dans le langage courant) est un trouble... <a  onclick="<?php requete('4',$BDD) ?>"  href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-            
                 <div class="container">
                     <div class="row about">
                         <div class="col-md-6 ">
@@ -192,13 +188,12 @@
                                 <h3>École-Travail</h3></a>
 
                                 <p>
-                                    L'école et le travail sont des lieux importants où la situ ation de handicap est importante.<span class="listeBleue">[Lire la suite]</span></a>
+                                    L'école et le travail sont des lieux importants où la situation de handicap est...<span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            
             
                 <div class="container">
                     <div class="row about">
@@ -209,7 +204,6 @@
                                 <h3>Loisirs</h3></a>
                                 <p>
                                 Les jeux sont des moments précieux pour pouvoir décompresser <span class="listeBleue">[Lire la suite]</span></a>
-
                                 </p>
                             </div>
                         </div>
@@ -220,7 +214,7 @@
                                 <h3>Soins-Traitement</h3></a>
 
                                 <p>
-                                    L'accès au soin peut être rendu difficile de part une mauvaise gestion du handicap <span class="listeBleue">[Lire la suite]</span></a>
+                                    L'accès au soin peut être rendu difficile de part une mauvaise gestion du <span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
@@ -233,7 +227,7 @@
         mysqli_free_result($TabSit);
         //libère la ressource TabDef
         
-        //ferme la base de donnée
+        //ferme la base de données
         mysqli_close($BDD);
         ?>
 
