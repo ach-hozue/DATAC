@@ -69,32 +69,38 @@
         $TabSit= mysqli_query($BDD, $RqtSit);
         $LgnSit = mysqli_fetch_array($TabSit);
    
-        function requete($identifiant,$BDD)
-        {
-            global $LgnDef;
-            $RqtDef = "SELECT * FROM deficience WHERE id_deficience=$identifiant";
-            $TabDef = mysqli_query($BDD, $RqtDef); 
-            $LgnDef = mysqli_fetch_array ($TabDef);
-            return $LgnDef;
-        }
+        $i=0;
+        $RqtDef = "SELECT * FROM deficience";
+        $TabDef = mysqli_query($BDD, $RqtDef); 
+       while ($LgnDef = mysqli_fetch_array ($TabDef))
+       {
+           $tableau[$i]["id"]=$LgnDef["id_deficience"];
+           $tableau[$i]["nom"]=$LgnDef["nom_def"];
+           $tableau[$i]["texte"]=$LgnDef["texte_def"];
+           ?>
+           <!--definition d'un modal -->
+           <div style="display:none">
+                           <div id="<?php echo $tableau[$i]["id"]; ?>" class="modal-container">
+                               <div  class="modal-title"><?php echo $tableau[$i]["nom"]; ?></div>
+                               <div class="modal-body">
+                                   <?php
+                                   if ($tableau[$i]["texte"] != NULL OR $tableau[$i]["texte"] != "") {
+                                       ?>
+                                       <p class="descrp"><?php echo $tableau[$i]["texte"]; ?></p>
+                                       <?php
+                                   }
+                                   ?>
+                               </div>
+                           </div>
+           </div>
+            <?php
+           $i++;
 
-        global $LgnDef;
+       }
+        
+        
         ?>
-        <!--definition d'un modal -->
-        <div style="display:none">
-                        <div id="<?php echo $LgnDef["id_deficience"]; ?>" class="modal-container">
-                            <div  class="modal-title"><?php echo $LgnDef["nom_def"]; ?></div>
-                            <div class="modal-body">
-                                <?php
-                                if ($LgnDef["texte_def"] != NULL OR $LgnDef["texte_def"] != "") {
-                                    ?>
-                                    <p class="descrp"><?php echo $LgnDef["texte_def"]; ?></p>
-                                    <?php
-                                }
-                                ?>
-                            </div>
-                        </div>
-        </div>
+      
         
         <div class="niveau">
 
@@ -105,9 +111,10 @@
                             <div class="about1">
                             <a href="deficience.php?idDef=1">
                             <img class="ImageRecherche pic1Ab"  src="images/Visuel.png" />
-                                <h3>Déficiences visuelles</h3></a>
+                                <h3><?php echo  $tableau[0]["nom"] ?></h3></a>
                                 <p>
-                                    La vision est un des sens primordiaux dans la communication.<a onclick="<?php requete('1',$BDD) ?>" href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
+                                   <?php echo tronquer_texte($tableau[0]["texte"],60) ?>
+                                   <a href="popup(<?php echo $tableau[0]["id"];?>)" class="popup(<?php echo $tableau[0]["id"];?>)" name="<?php echo $tableau[0]["nom"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
@@ -115,9 +122,10 @@
                             <div class="about1">
                             <a href="deficience.php?idDef=2">
                             <img class="ImageRecherche pic2Ab" src="images/Auditif.png" />
-                                <h3>Déficiences auditives</h3></a>
+                                <h3><?php echo $tableau[1]["nom"] ?></h3></a>
                                 <p>
-                                    Les déficiences auditives peuvent être un frein à la communication. <a onclick="<?php requete('2',$BDD) ?>" href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
+                                <?php echo tronquer_texte($tableau[1]["texte"],60) ?> 
+                                <a href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
@@ -130,9 +138,10 @@
                             <div class="about1">
                             <a href="deficience.php?idDef=3">                          
                             <img class="ImageRecherche pic1Ab" src="images/Moteur.png" />
-                                <h3>Déficiences motrices</h3></a>
+                                <h3><?php echo $tableau[2]["nom"] ?></h3></a>
                                 <p>
-                                    Pour communiquer, il est souvent nécessaire d’utiliser ses membres supérieurs. <a onclick="<?php requete('3',$BDD) ?>" href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
+                                <?php echo tronquer_texte($tableau[2]["texte"],60) ?> 
+                                <a href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
 
                                 </p>
 
@@ -142,9 +151,9 @@
                             <div class="about1">
                             <a href="deficience.php?idDef=4">
                             <img class="ImageRecherche pic2Ab" src="images/Mental.png" />
-                                <h3>Déficiences mentales et psychiques</h3></a>
+                                <h3><?php echo $tableau[3]["nom"] ?></h3></a>
                                 <p>
-                                    Le handicap mental (retard mental, dans le langage courant) est un trouble... <a  onclick="<?php requete('4',$BDD) ?>"  href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
+                                    <?php echo tronquer_texte($tableau[3]["texte"],60) ?> <a href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
@@ -157,9 +166,9 @@
                             <div class="about1">
                             <a href="deficience.php?idDef=5">
                             <img class="ImageRecherche pic1Ab" src="images/Parole.png" />
-                                <h3>Déficiences de la parole et du langage</h3></a>
+                                <h3><?php echo $tableau[4]["nom"] ?></h3></a>
                                 <p>        
-                                    L’usage de la parole et du langage dans la communication est primordial. <a  onclick="<?php requete('5',$BDD) ?>" href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
+                                    <?php echo tronquer_texte($tableau[4]["texte"],60) ?> <a href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
@@ -174,9 +183,9 @@
                             <div class="about1">
                             <a href="situation.php?idSit=1">
                             <img class="ImageRecherche pic1Ab"  src="images\Manger.png" />
-                                <h3>Repas</h3></a>
+                                <h3>Alimentation</h3></a>
                                 <p>
-                                Le repas est un élèment essentiel de la vie de tous les jours <span class="listeBleue">[Lire la suite]</span></a>
+                                    <?php echo tronquer_texte($tableau[5]["texte"],60) ?> <span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
@@ -229,8 +238,14 @@
         
         //ferme la base de données
         mysqli_close($BDD);
-        ?>
+    
+        function tronquer_texte($texte, $nbchar)
+        {
+        return (strlen($texte) > $nbchar ? substr(substr($texte,0,$nbchar),0,
+        strrpos(substr($texte,0,$nbchar)," "))." (...)" : $texte);
+        }
 
+        ?> 
         </article>
     <footer class="row">
         <div class="col-lg-12">
@@ -241,36 +256,41 @@
 
 </body>
 <script type="text/javascript">		
-            function afficherMasquerNiveau(id) {
+            function afficherMasquerNiveau(id) 
+            {
                 document.getElementById(id).style.display="block";
                 document.getElementById(id+"B").style.borderRadius= '50%';
                 document.getElementById(id+"B").style.backgroundColor="#00ABDC";
                 document.getElementById(id+"B").style.color="white";
-            if (id=="niveau1")	{
+                if (id=="niveau1")	{
 
-                document.getElementById("niveau2").style.display="none";
-                document.getElementById(id+"B").style.borderRadius= '50%';
-                document.getElementById("niveau2B").style.backgroundColor="";
-                document.getElementById("niveau2B").style.color="#00ABDC";
+                    document.getElementById("niveau2").style.display="none";
+                    document.getElementById(id+"B").style.borderRadius= '50%';
+                    document.getElementById("niveau2B").style.backgroundColor="";
+                    document.getElementById("niveau2B").style.color="#00ABDC";
+                }
+                else if (id=="niveau2")	
+                {
+    
+                    document.getElementById("niveau1").style.display="none";
+                    document.getElementById(id+"B").style.borderRadius= '50%';
+                    document.getElementById("niveau1B").style.backgroundColor="";
+                    document.getElementById("niveau1B").style.color="#00ABDC";
+                }
             }
-            else if (id=="niveau2")	{
 
-                document.getElementById("niveau1").style.display="none";
-                document.getElementById(id+"B").style.borderRadius= '50%';
-                document.getElementById("niveau1B").style.backgroundColor="";
-                document.getElementById("niveau1B").style.color="#00ABDC";
+            function popup(id){
+                fancybox({
+                    maxWidth    : 800,
+                    maxHeight    : 600,
+                    fitToView    : false,
+                    width        : '70%',
+                    height        : '70%',
+                    autoSize    : false,
+                    closeClick    : false,
+                    openEffect    : 'none',
+                    closeEffect    : 'none'
+                });
             }
-            }
-            $("<?php echo '.modal'.$LgnDef["id_deficience"].''; ?>").fancybox({
-                maxWidth    : 800,
-                maxHeight    : 600,
-                fitToView    : false,
-                width        : '70%',
-                height        : '70%',
-                autoSize    : false,
-                closeClick    : false,
-                openEffect    : 'none',
-                closeEffect    : 'none'
-            });
 </script>
 </html>
