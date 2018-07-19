@@ -64,41 +64,69 @@
         require("connect.php");
         mysqli_set_charset($BDD, "utf8");
         // Recherche et affichage (hyperlien) de toutes les déficiences et situations
-        $RqtSit="SELECT * FROM situation";
-        $TabSit= mysqli_query($BDD, $RqtSit);
-        $LgnSit = mysqli_fetch_array($TabSit);
-   
-        $i=0;
         $RqtDef = "SELECT * FROM deficience";
-        $TabDef = mysqli_query($BDD, $RqtDef); 
+        $TabDef = mysqli_query($BDD, $RqtDef);
+        $i=0; 
        while ($LgnDef = mysqli_fetch_array ($TabDef))
        {
            $tableau[$i]["id"]=$LgnDef["id_deficience"];
            $tableau[$i]["nom"]=$LgnDef["nom_def"];
            $tableau[$i]["texte"]=$LgnDef["texte_def"];
-           
+           ?>
+           <div style="display:none">
+           <div id="<?php echo  $tableau[$i]["id"]; ?>" class="modal-container">
+               <div  class="modal-title"><?php echo $tableau[$i]["nom"]; ?></div>
+               <div class="modal-body">
+                   <?php
+                   if ($tableau[$i]["texte"] != NULL OR $tableau[$i]["texte"] != "") {
+                       ?>
+                       <p class="descrp"><?php echo $tableau[$i]["texte"] ?></p>
+                       <?php
+                   }
+                   ?>
+                </div>
+                </div>
+            </div>
+            <?php
            $i++;
 
        }
         
         
-        ?>
-        <!--definition d'un modal -->
-        <div style="display:none">
-            <div id="<?php echo $LgnDef["id_deficience"]; ?>" class="modal-container">
-                <div  class="modal-title"><?php echo $LgnDef["nom_def"]; ?></div>
-                <div class="modal-body">
-                    <?php
-                    if ($LgnDef["texte_def"] != NULL OR $LgnDef["texte_def"] != "") {
-                        ?>
-                        <p class="descrp"><?php echo $LgnDef["texte_def"]; ?></p>
-                        <?php
-                    }
-                    ?>
+
+        $RqtSit="SELECT * FROM situation";
+        $TabSit= mysqli_query($BDD, $RqtSit);
+        $j=0;
+        while ($LgnSit = mysqli_fetch_array($TabSit))
+       {
+           $tableauSit[$j]["id"]=$LgnSit["id_situation"];
+           $tableauSit[$j]["nom"]=$LgnSit["nom_sit"];
+           $tableauSit[$j]["texte"]=$LgnSit["texte_sit"];
+           ?>
+           <div style="display:none">
+           <div id="Sit<?php echo  $tableauSit[$j]["id"]; ?>" class="modal-container">
+               <div  class="modal-title"><?php echo $tableauSit[$j]["nom"]; ?></div>
+               <div class="modal-body">
+                   <?php
+                   if ($tableauSit[$j]["texte"] != NULL OR $tableauSit[$j]["texte"] != "") {
+                       ?>
+                       <p class="descrp"><?php echo $tableauSit[$j]["texte"] ?></p>
+                       <?php
+                   }
+                   ?>
+                </div>
                 </div>
             </div>
-        </div>
-
+            <?php
+           $j++;
+       }
+   
+        
+        
+        ?>
+       <!--definition d'un modal -->
+       
+      
         
         <div class="niveau">
 
@@ -112,7 +140,7 @@
                                 <h3><?php echo  $tableau[0]["nom"] ?></h3></a>
                                 <p>
                                    <?php echo tronquer_texte($tableau[0]["texte"],60) ?>
-                                   <a href="popup(<?php echo $tableau[0]["id"];?>)" class="popup(<?php echo $tableau[0]["id"];?>)" name="<?php echo $tableau[0]["nom"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
+                                   <a href="<?php echo '#'.$tableau[0]["id"].''; ?>" class="popup" name="<?php echo $tableau[0]["nom"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
@@ -123,7 +151,7 @@
                                 <h3><?php echo $tableau[1]["nom"] ?></h3></a>
                                 <p>
                                 <?php echo tronquer_texte($tableau[1]["texte"],60) ?> 
-                                <a href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
+                                <a href="<?php echo '#'.$tableau[1]["id"].''; ?>" class="popup" name="<?php echo $tableau[1]["nom"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
@@ -139,8 +167,7 @@
                                 <h3><?php echo $tableau[2]["nom"] ?></h3></a>
                                 <p>
                                 <?php echo tronquer_texte($tableau[2]["texte"],60) ?> 
-                                <a href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
-
+                                <a href="<?php echo '#'.$tableau[2]["id"].''; ?>" class="popup" name="<?php echo $tableau[2]["nom"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
 
                             </div>
@@ -151,7 +178,8 @@
                             <img class="ImageRecherche pic2Ab" src="images/Mental.png" />
                                 <h3><?php echo $tableau[3]["nom"] ?></h3></a>
                                 <p>
-                                    <?php echo tronquer_texte($tableau[3]["texte"],60) ?> <a href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
+                                    <?php echo tronquer_texte($tableau[3]["texte"],60) ?> 
+                                    <a href="<?php echo '#'.$tableau[3]["id"].''; ?>" class="popup" name="<?php echo $tableau[3]["nom"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
@@ -166,7 +194,8 @@
                             <img class="ImageRecherche pic1Ab" src="images/Parole.png" />
                                 <h3><?php echo $tableau[4]["nom"] ?></h3></a>
                                 <p>        
-                                    <?php echo tronquer_texte($tableau[4]["texte"],60) ?> <a href="<?php echo '#'.$LgnDef["id_deficience"].''; ?>" class="<?php echo 'modal'.$LgnDef["id_deficience"].''; ?>" name="<?php echo $LgnDef["nom_def"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
+                                    <?php echo tronquer_texte($tableau[4]["texte"],60) ?> 
+                                    <a href="<?php echo '#'.$tableau[4]["id"].''; ?>" class="popup" name="<?php echo $tableau[4]["nom"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
@@ -181,9 +210,10 @@
                             <div class="about1">
                             <a href="situation.php?idSit=1">
                             <img class="ImageRecherche pic1Ab"  src="images\Manger.png" />
-                                <h3>Alimentation</h3></a>
+                                <h3><?php echo  $tableauSit[0]["nom"] ?></h3></a>
                                 <p>
-                                    <?php echo tronquer_texte($tableau[5]["texte"],60) ?> <span class="listeBleue">[Lire la suite]</span></a>
+                                    <?php echo tronquer_texte($tableauSit[0]["texte"],70) ?> 
+                                    <a href="<?php echo '#Sit'.$tableauSit[0]["id"].''; ?>" class="popup" name="<?php echo $tableauSit[0]["nom"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
@@ -191,11 +221,10 @@
                             <div class="about1">
                             <a href="situation.php?idSit=2">
                             <img class="ImageRecherche pic2Ab" src="images\École travail.png" />
-
-                                <h3>École-Travail</h3></a>
-
+                                <h3><?php echo  $tableauSit[9]["nom"] ?></h3></a>
                                 <p>
-                                    L'école et le travail sont des lieux importants où la situation de handicap est...<span class="listeBleue">[Lire la suite]</span></a>
+                                    <?php echo tronquer_texte($tableauSit[9]["texte"],60) ?>
+                                    <a href="<?php echo '#Sit'.$tableauSit[9]["id"].''; ?>" class="popup" name="<?php echo $tableauSit[9]["nom"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
@@ -208,9 +237,10 @@
                             <div class="about1">
                             <a href="situation.php?idSit=3">                          
                             <img class="ImageRecherche pic1Ab" src="images/Loisirs.png" />
-                                <h3>Loisirs</h3></a>
+                                <h3><?php echo $tableauSit[16]["nom"] ?></h3></a>
                                 <p>
-                                Les jeux sont des moments précieux pour pouvoir décompresser <span class="listeBleue">[Lire la suite]</span></a>
+                                    <?php echo tronquer_texte($tableauSit[16]["texte"],60) ?>
+                                    <a href="<?php echo '#Sit'.$tableauSit[16]["id"].''; ?>" class="popup" name="<?php echo $tableauSit[16]["nom"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
@@ -218,10 +248,10 @@
                             <div class="about1">
                             <a href="situation.php?idSit=4">
                             <img class="ImageRecherche pic2Ab" src="images/Soins.png" />
-                                <h3>Soins-Traitement</h3></a>
-
+                                <h3><?php echo  $tableauSit[22]["nom"] ?></h3></a>
                                 <p>
-                                    L'accès au soin peut être rendu difficile de part une mauvaise gestion du <span class="listeBleue">[Lire la suite]</span></a>
+                                    <?php echo tronquer_texte($tableauSit[22]["texte"],60) ?>
+                                    <a href="<?php echo '#Sit'.$tableauSit[22]["id"].''; ?>" class="popup" name="<?php echo $tableauSit[22]["nom"]; ?>"><span class="listeBleue">[Lire la suite]</span></a>
                                 </p>
                             </div>
                         </div>
@@ -277,7 +307,7 @@
                 }
             }
 
-            function popup(id){
+            /* function popup(id){
                 fancybox({
                     maxWidth    : 800,
                     maxHeight    : 600,
@@ -289,6 +319,25 @@
                     openEffect    : 'none',
                     closeEffect    : 'none'
                 });
-            }
+            } */
+            $(document).ready(function() 
+            {
+            /**
+            * Affichage des photos dans une Fancybox
+            */
+                $("a.popup").fancybox({
+                    maxWidth    : 800,
+                    maxHeight    : 600,
+                    fitToView    : false,
+                    width        : '70%',
+                    height        : '70%',
+                    autoSize    : false,
+                    closeClick    : false,
+                    openEffect    : 'none',
+                    closeEffect    : 'none'
+                });
+            });
+
+
 </script>
 </html>
