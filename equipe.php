@@ -6,9 +6,8 @@
         <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
         <link id="css" rel="stylesheet" href="mise_en_forme.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script href="bootstrap/js/bootstrap.js"></script>
-        <script href="bootstrap/js/npm.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
     </head>
     <body>
     <!--container-fluid : div avec possibilitée de placement des éléments grâce à bootstrap (row, col,...);les éléments remplissent tout l'écran-->

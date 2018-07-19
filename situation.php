@@ -18,9 +18,8 @@
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
 		<link id="css" rel="stylesheet" href="mise_en_forme.css"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script href="bootstrap/js/bootstrap.js"></script>
-		<script href="bootstrap/js/npm.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 		<!--import pour le modal("i")-->
 		<link href="fancybox-3.0/fancybox-3.0/dist/jquery.fancybox.css" rel="stylesheet">
 		<script src="fancybox-3.0/fancybox-3.0/dist/jquery.fancybox.js"></script>
@@ -45,7 +44,7 @@
 		<!--bannière grise avec boutons catégories + modal(s) d'information(s)-->
 		<section class="row" id="rSect">
 			<article>
-				<br><p class="col-sm-offset-1 col-sm-10 sousTitre">Pour cette situation, il existe les catégories d'actions suivantes :</p><br><br><br><br><br>
+				<br><p class="col-sm-offset-1 col-sm-10 sousTitre">// <?php echo $nomSit; ?> <br> Pour cette situation, il existe les catégories d'actions suivantes :</p><br><br><br><br><br>
 				<?php
 				// Recupération des catégories de situation à afficher
 				$RqtSituation = "SELECT * FROM situation WHERE id_sit_cat = $idSit AND niveau = 2";

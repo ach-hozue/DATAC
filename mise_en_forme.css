@@ -399,7 +399,7 @@ a.ariane:hover {
 }
 /*paragraphe description du dispositif*/
 .descriptionProduit{
-    margin-top: 10%;
+    margin-top: 5%;
     color: #333333;
 }
 
@@ -570,10 +570,6 @@ a:link {
 
     }
 
-    .btnGrand{
-        visibility: hidden;
-    }
-
     #rSect{
         text-align: center;
 	}
@@ -636,7 +632,7 @@ a:link {
 
 .iconeSituation:hover{
     cursor: pointer;
-    background-color: #C1EBF7;
+    background-color: white;
     font-weight: bold;
 }
 
