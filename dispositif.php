@@ -159,7 +159,7 @@ for ($i = 1; $i < $niv; $i++) {
 
             //
             <?php
-            if(isset($_GET["idSit"]))
+            if($BoolSituation==true)
             { 
                 ?>
                 <a class="fAriane" href="situation.php?idSit=<?php echo $idSit; ?>"><?php echo $nomSit ?> // <?php echo $nomSousSit; ?></a>
@@ -279,7 +279,7 @@ for ($i = 1; $i < $niv; $i++) {
                                         <?php
                                         while ($LgnSim = mysqli_fetch_array($TabSim)) {
                                             ?>
-                                            <a href="dispositif.php?idDis=<?php echo $LgnSim["id_dispositif"]; ?>" class="tablink"><?php echo $LgnSim["nom_dis"]; ?></a>
+                                            <a href="dispositif.php?idDis=<?php echo $LgnSim["id_dispositif"]; ?>&bool=<?php echo $BoolSituation ?>&idSit=<?php echo $idSit ?>&idSsSit=<?php echo $idSousSit ?>" class="tablink"><?php echo $LgnSim["nom_dis"]; ?></a>
                                             <br/>
                                             <?php
                                         }
@@ -301,7 +301,18 @@ for ($i = 1; $i < $niv; $i++) {
         <?php include("bas.php"); ?>
     </div>
     <!-- retour à la page de choix de dispositif précédente -->
-    <a class="pagePreced" href="categorie.php?idCat=<?php echo $tabCatId[$niv];?>&niv=<?php echo $niv; ?>"><img class="logoRetour" src="images/retour_fleche.png"> </a>
+    <?php
+    if ($BoolSituation==true)
+    {?>
+        <a class="pagePreced" href="categorieSituation.php?idCat=<?php echo $tabCatId[$niv];?>&niv=<?php echo $niv; ?>&idSit=<?php echo $idSit ?>&idSsSit=<?php echo $idSousSit ?>"><img class="logoRetour" src="images/retour_fleche.png"> </a>
+        <?php
+    }
+    else
+    {?>
+        <a class="pagePreced" href="categorie.php?idCat=<?php echo $tabCatId[$niv];?>&niv=<?php echo $niv; ?>"><img class="logoRetour" src="images/retour_fleche.png"> </a>
+        <?php
+    }
+    ?>
      
     
    
