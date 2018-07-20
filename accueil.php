@@ -121,7 +121,6 @@
             <?php
            $j++;
        }
-
         ?>
         <div class="niveau">
             <!--definition du niveau 1 -->
@@ -305,11 +304,12 @@
                 }
             }
 
+
             //Cette fonction permet d'afficher la description des situations ou des déficiences
             $(document).ready(function() 
             {
             /**
-            * Affichage des textes dans une Fancybox
+            * Affichage des photos dans une Fancybox
             */
                 $("a.popup").fancybox({
                     maxWidth    : 800,
@@ -323,7 +323,5 @@
                     closeEffect    : 'none'
                 });
             });
-
-
 </script>
 </html>
