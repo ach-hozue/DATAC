@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  ven. 13 juil. 2018 à 09:56
+-- Généré le :  ven. 20 juil. 2018 à 10:23
 -- Version du serveur :  10.1.31-MariaDB
 -- Version de PHP :  5.6.35
 
@@ -2145,8 +2145,9 @@ INSERT INTO `site` (`id_site`, `nom_site`, `url`) VALUES
 
 CREATE TABLE `situation` (
   `id_situation` int(5) NOT NULL,
-  `nom_sit` varchar(50) CHARACTER SET utf8 DEFAULT NULL,
+  `nom_sit` varchar(100) CHARACTER SET utf8 DEFAULT NULL,
   `image` varchar(100) CHARACTER SET utf8 DEFAULT NULL,
+  `texte_sit` text CHARACTER SET utf8,
   `niveau` int(3) DEFAULT NULL,
   `id_sit_cat` int(10) DEFAULT NULL,
   `id_cat_prec` int(5) DEFAULT NULL
@@ -2156,35 +2157,35 @@ CREATE TABLE `situation` (
 -- Déchargement des données de la table `situation`
 --
 
-INSERT INTO `situation` (`id_situation`, `nom_sit`, `image`, `niveau`, `id_sit_cat`, `id_cat_prec`) VALUES
-(1, 'Repas', 'Manger.png\r\n\r\n', 1, 1, NULL),
-(2, 'Faire les courses', NULL, 2, 1, 1),
-(3, 'Sur internet', NULL, 3, 1, 2),
-(4, 'Déplacement', NULL, 3, 1, 2),
-(5, 'En magasin', NULL, 3, 1, 2),
-(6, 'Préparer le repas', NULL, 2, 1, 1),
-(7, 'Suivre une recette', NULL, 3, 1, 6),
-(8, 'Cuisiner', NULL, 3, 1, 6),
-(9, 'Se nourrir', NULL, 2, 1, 1),
-(10, 'École/Travail', 'École travail.png', 1, 2, NULL),
-(11, 'Déplacement', NULL, 2, 2, 10),
-(12, 'Sur place', NULL, 2, 2, 10),
-(13, 'Outils informatiques', NULL, 3, 2, 12),
-(14, 'Planification', NULL, 3, 2, 12),
-(15, 'Échanges d\'informations', NULL, 3, 2, 12),
-(16, 'Apprentissage', NULL, 2, 2, 10),
-(17, 'Loisirs', 'Loisirs.png', 1, 3, NULL),
-(18, 'Planification', NULL, 2, 3, 17),
-(19, 'Déplacement', NULL, 2, 3, 17),
-(20, 'Divertissement', NULL, 2, 3, 17),
-(21, 'Échanges d\'information', NULL, 3, 3, 20),
-(22, 'Outils informatiques', NULL, 3, 3, 20),
-(23, 'Soins/Traitements', 'Soins.png', 1, 4, NULL),
-(24, 'Établissement médical', NULL, 2, 4, 23),
-(25, 'Déplacement', NULL, 3, 4, 24),
-(26, 'Échanges d\'informations', NULL, 3, 4, 24),
-(27, 'Acte de soins', NULL, 2, 4, 23),
-(28, 'Planification/Prévention', NULL, 2, 4, 23);
+INSERT INTO `situation` (`id_situation`, `nom_sit`, `image`, `texte_sit`, `niveau`, `id_sit_cat`, `id_cat_prec`) VALUES
+(1, 'Alimentation', 'Manger.png\r\n\r\n', 'Les activités quotidiennes telles que l’alimentation deviennent difficiles lorsque l\'on est en situation de handicap. Faire les courses, suivre une recette, manipuler des ustensiles... sont autant d\'activités essentielles qui peuvent devenir pénibles. \r\nDe plus, certains handicaps peuvent provoquer des troubles lors de l\'alimentation (trouble de la déglutition, difficulté de mastication, bavage...).\r\n', 1, 1, NULL),
+(2, 'Faire les courses', NULL, NULL, 2, 1, 1),
+(3, 'Sur internet', NULL, NULL, 3, 1, 2),
+(4, 'Déplacement', NULL, NULL, 3, 1, 2),
+(5, 'En magasin', NULL, NULL, 3, 1, 2),
+(6, 'Préparer le repas', NULL, NULL, 2, 1, 1),
+(7, 'Suivre une recette', NULL, NULL, 3, 1, 6),
+(8, 'Cuisiner', NULL, NULL, 3, 1, 6),
+(9, 'Se nourrir', NULL, NULL, 2, 1, 1),
+(10, 'École-Travail', 'École travail.png', 'Les besoins spécifiques des enfants en situation de handicap rendent plus difficiles leurs parcours scolaires (besoin d’assistance, de matériels spécifiques, d’aménagements adaptés, etc.). Ainsi, les personnes en situation de handicap disposent souvent d’un niveau de qualification inférieur à la moyenne. Les mêmes difficultés se retrouvent dans le monde du travail, leur handicap limitant l’étendue des tâches qu’ils peuvent exercer.', 1, 2, NULL),
+(11, 'Déplacement', NULL, NULL, 2, 2, 10),
+(12, 'Sur le lieu d&#145;action', NULL, NULL, 2, 2, 10),
+(13, 'Outils informatiques', NULL, NULL, 3, 2, 12),
+(14, 'Planification', NULL, NULL, 3, 2, 12),
+(15, 'Échanges d\'informations', NULL, NULL, 3, 2, 12),
+(16, 'Apprentissage', NULL, NULL, 2, 2, 10),
+(17, 'Loisirs', 'Loisirs.png', 'L’accès des personnes en situation de handicap à la vie culturelle et aux loisirs reste encore très limité. Le handicap rend difficile certaines pratiques, notamment sportives, ainsi que les déplacements et l’accessibilité des lieux. Ainsi, les personnes en situation de handicap sont deux fois plus nombreuses à ne pas assister à des spectacles que le reste de la population : 25 % contre 13 % (Insee, 2001). ', 1, 3, NULL),
+(18, 'Planification', NULL, NULL, 2, 3, 17),
+(19, 'Déplacement', NULL, NULL, 2, 3, 17),
+(20, 'Divertissement', NULL, NULL, 2, 3, 17),
+(21, 'Échanges d\'information', NULL, NULL, 3, 3, 20),
+(22, 'Outils informatiques', NULL, NULL, 3, 3, 20),
+(23, 'Soins-Traitements', 'Soins.png', 'Si des progrès ont été faits pour faciliter le quotidien des personnes en situation de handicap, l’accès aux soins reste un enjeu important. De nombreux éléments rendent les soins des personnes en situation de handicap compliqués voire les poussent à y renoncer, en particulier des difficultés d’accès physique, de communication, une autonomie réduite ou encore une place insuffisante accordée à l’entourage. ', 1, 4, NULL),
+(24, 'Établissement médical', NULL, NULL, 2, 4, 23),
+(25, 'Déplacement', NULL, NULL, 3, 4, 24),
+(26, 'Échanges d\'informations', NULL, NULL, 3, 4, 24),
+(27, 'Acte de soins', NULL, NULL, 2, 4, 23),
+(28, 'Planification/Prévention', NULL, NULL, 2, 4, 23);
 
 --
 -- Index pour les tables déchargées
