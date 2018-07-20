@@ -1,5 +1,6 @@
 <a class="btn btn-primary changeContraste" href="#" onclick="changeContrast()">Contraste élevé</a>
 <script>
+    //La fonction changeContrat permet de changer de feuille de style css
     function changeContrast() {
         console.log($('#css').attr('href'));
         if($('#css').attr('href') == 'mise_en_forme.css') {

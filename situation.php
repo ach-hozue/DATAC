@@ -4,7 +4,7 @@
 	// Connexion à la base de données
 	require("connect.php");
 	mysqli_set_charset($BDD, "utf8");
-	// Recherche de l’indentifiant et du nom de la déficience sur laquelle on vient de cliquer
+	// Recherche de l’indentifiant et du nom de la situation sur laquelle on vient de cliquer
 	$idSit = $_GET["idSit"];
 	$RqtAriane = "SELECT * FROM situation WHERE id_sit_cat = $idSit AND niveau=1";
 	$TabAriane = mysqli_query($BDD, $RqtAriane);
@@ -103,6 +103,7 @@
 																				$TabDeficience= mysqli_query($BDD, $RqtDeficience);
 																				while ($LgnDeficience =mysqli_fetch_array($TabDeficience))
 																				{
+																					//On écrit une phrase selon le type de déficience
 																					if ($déficience!=$LgnDeficience['id_def_cat'])
 																					{
 																						if ($LgnDeficience['id_def_cat']==1)
@@ -179,12 +180,13 @@
 														$tableau2["id_prec"]=$LgnAssociative["id_cat_prec"];
 														$comparaisonCat=$LgnAssociative["id_cat_prec"];
 													
-														foreach ($tableau2 as $key2=>$element2)
+														foreach ($tableau2 as $key2=>$element2) //On parcourt le tableau
 														{
 															$RqtDeficience2="SELECT * FROM categorie WHERE id_categorie = $element2";
 															$TabDeficience2= mysqli_query($BDD, $RqtDeficience2);
 															while ($LgnDeficience2=mysqli_fetch_array($TabDeficience2))
 															{ 
+																//On écrit une phrase selon le type de déficience
 																if ($déficience!=$LgnDeficience2['id_def_cat'])
 																{
 																	if ($LgnDeficience2['id_def_cat']==1)
@@ -227,15 +229,12 @@
 																}
 																?>
 																<a href="categorieSituation.php?idNiv=<?php echo $LgnDeficience2["niveau"];?>&idCat=<?php echo $LgnDeficience2["id_categorie"];?>&idSsSit=<?php echo $idSituation ?>&idSit=<?php echo $idSit ?>&niv=<?php echo $LgnDeficience2['niveau'] ?>" class="sousCat2"><?php echo $LgnDeficience2['nom_cat'] ?></a>
-
-
 																<?php
 															}
 														}
 													}
 												}
-													?>
-												
+												?>
 											</div>
 										</div>
 									<?php
@@ -243,7 +242,6 @@
 								?>
 							</div>	
 					</div>
-				
 				<?php
 				}
 				?>

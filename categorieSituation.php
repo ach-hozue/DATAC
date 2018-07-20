@@ -20,21 +20,22 @@ $nomCat = $LgnCat["nom_cat"];
 
 
 // Récupération du nom de la situation
-
 $RqtSit = "SELECT * FROM situation WHERE id_sit_cat = $idSit AND niveau=1";
 $TabSit = mysqli_query($BDD, $RqtSit);
 $LgnSit = mysqli_fetch_array($TabSit);
 $nomSit = $LgnSit["nom_sit"];
 
+// Récupération du nom de la sous-situation
 $RqtSousSit="SELECT * FROM situation WHERE id_situation=$idSousSit";
 $TabSousSit = mysqli_query($BDD, $RqtSousSit);
 $LgnSousSit = mysqli_fetch_array($TabSousSit);
 $nomSousSit=$LgnSousSit['nom_sit'];
-// $idSousSit=$LgnSit['id_sit_cat'];
 
+//On range les élements dans un tableau
 $TabCategorie[0]=$nomSousSit;
 $TabCategorie[$nivCat]=$nomCat;
 
+//Le booléen bool permet de définir si nous sommes dans l'onglet situtation quand il vaut true
 $bool=true;
 
 for ($i = 1; $i < $nivCat; $i++) {
@@ -133,21 +134,6 @@ for ($i = 1; $i < $nivCat; $i++) {
                 <br>
                 <br>
                 <?php
-
-                
-
-                /*$query = "SELECT * FROM categorie WHERE id_cat_prec = $idCat AND id_categorie IN "
-                . "(SELECT id_categorie FROM association_situation_categorie WHERE id_situation = $idSousSit)";
-
-                $stmt = $BDD->query($query);
-
-                while($data = $stmt->fetch_assoc()) {
-                    echo'<pre>';
-                    var_dump($data);
-                    echo '</pre>';
-                    echo $data['nom_cat'];
-                }
-                exit;*/
 
                 // Recherche et affichage des toutes les sous-catégories relatives à la catégorie choisie
                 $query = "SELECT * FROM categorie WHERE id_cat_prec = $idCat AND id_categorie IN "

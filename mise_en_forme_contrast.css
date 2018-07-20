@@ -632,32 +632,6 @@ span.listeBleue{
     border-radius: 15px;
 }
 
-.horL{
-overflow: auto;
-    margin: auto;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 1170px;
-    height: 500px;
-    content: '';
-    z-index: 1;
-	background: url(images/horL.png) no-repeat;
-}
-
-.horL2{
-    overflow: auto;
-        margin: auto;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 1170px;
-        height: 500px;
-        content: '';
-        z-index: 1;
-        background: url(images/horL_petit.png) no-repeat;
-    }
-
 div.spoiler {
     padding: 10px;
     cursor: pointer;
@@ -670,7 +644,16 @@ div.spoiler div.contenuSpoiler {
 }
 
 
-/* rond*/
+/* Accueil*/
+
+.chart{
+    margin: 0 auto;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+}
+
 .titremilieu{
     font-family: 'Exo', 'sans-serif';
     font-size: 26px;
@@ -813,17 +796,6 @@ div.spoiler div.contenuSpoiler {
     width: 70%;
     border-radius : 5px;
     padding: 0px;
-}
-
-
-
-
-.chart{
-    margin: 0 auto;
-    position: relative;
-    width: 70px;
-    height: 70px;
-    text-align: center;
 }
 
 .p{
